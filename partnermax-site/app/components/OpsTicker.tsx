@@ -2,13 +2,12 @@
    the track children once at init for a seamless loop (same mechanism
    as the logo marquee). aria-hidden: this is decorative chrome. */
 const TICKER_ITEMS = [
-  "Network · Operational",
-  "Channel desk · Online",
-  "Provisioning queue · 14d median",
-  "Toronto HQ · 08:42 ET",
-  "Wireless SLA · 99.97%",
-  "Fibre uptime · Within spec",
-  "Response SLA · 1 business day",
+  "Rogers Licensed",
+  "25+ years of experience",
+  "Independent Canadian company",
+  "Coast-to-coast coverage",
+  "Wireless · Fibre · Voice",
+  "One partner · one bill",
 ];
 
 export default function OpsTicker() {

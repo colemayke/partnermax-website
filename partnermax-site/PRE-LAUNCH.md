@@ -32,14 +32,14 @@ third party.
 - [ ] ⚠️ **Team portraits** — `TeamCard` falls back to initials (DM / BO).
       Pass `member.photo` (4:3, dark/moody) once real portraits exist; put
       files in `public/assets/`.
-- [ ] ⚠️ **Commitments / mission / differentiators / product copy** — all
+- [ ] ⚠️ **Mission / differentiators / product copy** — all
       invented marketing copy in `app/page.tsx` + `app/about/page.tsx`.
       Confirm every operational claim (timelines, "$0 consultation",
       "99.9% SLA", "14–21 days", phone/address) is true and approved.
 - [ ] ⚠️ **Contact details (placeholders)** — `hello@partnermax.ca`,
-      `+1 416 555 0114` (a 555 placeholder number), `255 Front St W` appear
+      `999 999 9999` (explicit placeholder number), `Placeholder St` appear
       in `app/components/SiteFooter.tsx` AND `app/contact/page.tsx`. Replace
-      both with real ones.
+      all with real ones.
 - [ ] ⛔ **Rogers® treatment** — wordmark in the marquee + references in copy.
       Replace per Rogers' actual co-brand guidelines / channel agreement.
 

@@ -11,21 +11,21 @@ export default function ImageBreak() {
       <div className="site-image-break__inner fade-up">
         <div>
           <div className="site-image-break__eyebrow">
-            From Toronto · across Canada
+            Canadian-built · coast to coast
           </div>
           <h2 className="site-image-break__h" data-reveal-text>
-            Built in <em>Toronto</em>.
+            Built in <em>Canada</em>.
             <br />
             Working coast to coast.
           </h2>
         </div>
         <p className="site-image-break__p">
-          Our channel managers and provisioning leads work out of one office on
-          Front Street West. The services they activate run in every province
-          and territory we&rsquo;re licensed to serve.
+          Our channel managers and provisioning leads work across Canada. The
+          services they activate run in every province and territory
+          we&rsquo;re licensed to serve.
         </p>
       </div>
-      <span className="site-image-break__caption">Toronto · 43.6°N · HQ</span>
+      <span className="site-image-break__caption">Canada · coast to coast</span>
     </section>
   );
 }

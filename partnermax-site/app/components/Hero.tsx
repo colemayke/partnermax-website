@@ -15,10 +15,10 @@ export default function Hero() {
       <div className="site-hero__body">
         <div>
           <div className="site-hero__eyebrow">
-            Channel partnership · Rogers-licensed · Canada
+            25+ years of channel partnerships in Canada
           </div>
           <h1 className="site-hero__h" data-reveal-text>
-            The licensed channel for
+            Redefining the channel for
             <br />
             <em>Canadian</em> business.
           </h1>
@@ -51,7 +51,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="site-hero__scroll">Scroll for the channel</div>
     </header>
   );
 }

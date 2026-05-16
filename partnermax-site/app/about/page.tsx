@@ -97,29 +97,6 @@ const STAFF: { name: string; role: string; initials: string }[] = [
   { name: "Cristian Vegara", role: "Placeholder", initials: "CV" },
 ];
 
-const COMMITMENTS = [
-  {
-    tag: "Commitment 01",
-    h: "Named contacts, not a queue.",
-    p: "Every account has a named channel manager and a named provisioning lead. You’ll have their direct line by the second meeting.",
-  },
-  {
-    tag: "Commitment 02",
-    h: "One-day response SLA.",
-    p: "Every message from a customer gets a real reply within one business day — not a ticket number. It’s in the contract.",
-  },
-  {
-    tag: "Commitment 03",
-    h: "Quotes are quotes.",
-    p: "Written, itemized, valid for 30 days. The price you sign is the price on the first invoice.",
-  },
-  {
-    tag: "Commitment 04",
-    h: "No surprise renewals.",
-    p: "90 days’ notice before any renewal. No auto-rollover. You decide each cycle whether to continue.",
-  },
-];
-
 export default function AboutPage() {
   return (
     <>
@@ -206,21 +183,20 @@ export default function AboutPage() {
                   }}
                 />
                 <div className="site-image-inset__caption">
-                  <span>Front Street West · Toronto</span>
-                  <span>HQ</span>
+                  <span>Across Canada</span>
+                  <span>Channel</span>
                 </div>
               </div>
               <div className="site-story__aside-block">
-                <span className="site-story__aside-label">Headquarters</span>
+                <span className="site-story__aside-label">Licensed</span>
                 <span
                   className="site-story__aside-val"
                   style={{ fontSize: 24 }}
                 >
-                  Toronto, ON
+                  Rogers
                 </span>
                 <p className="site-story__aside-desc">
-                  255 Front Street West. Operations, channel and provisioning
-                  under one roof.
+                  Commercial channel license for Rogers business products.
                 </p>
               </div>
               <div className="site-story__aside-block">
@@ -420,62 +396,10 @@ export default function AboutPage() {
                 maxWidth: "64ch",
               }}
             >
-              One Toronto team across channel management, provisioning, network
-              operations, accounts and finance. Every customer gets a named
-              channel manager and a named provisioning lead from day one.
+              One Canadian team across channel management, provisioning,
+              network operations, accounts and finance. Every customer gets a
+              named channel manager and a named provisioning lead from day one.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="site-section site-section--ivory" id="values">
-        <div className="site-container">
-          <SectionHead
-            num="04"
-            eyebrow="How we work"
-            title={
-              <>
-                Four <em>commitments</em>
-                <br />
-                we make in writing.
-              </>
-            }
-            lede={<>Each of these is written into the PartnerMax contract.</>}
-          />
-
-          <div className="pm-grid pm-grid--2 fade-up" style={{ gap: 24 }}>
-            {COMMITMENTS.map((c) => (
-              <div
-                className="pm-card"
-                key={c.tag}
-                style={{ background: "white", padding: 32 }}
-              >
-                <span className="pm-tag pm-tag--dot">{c.tag}</span>
-                <h3
-                  style={{
-                    fontFamily: "var(--pm-font-display)",
-                    fontWeight: 700,
-                    fontSize: 28,
-                    letterSpacing: "-0.018em",
-                    lineHeight: 1.1,
-                    margin: "16px 0 12px",
-                  }}
-                >
-                  {c.h}
-                </h3>
-                <p
-                  style={{
-                    fontFamily: "var(--pm-font-editorial)",
-                    fontSize: 16,
-                    lineHeight: 1.65,
-                    color: "var(--pm-text-muted)",
-                    margin: 0,
-                  }}
-                >
-                  {c.p}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -505,8 +429,8 @@ export default function AboutPage() {
           <span>Become a partner</span>
           <ArrowRight />
         </Link>
-        <a
-          href="mailto:hello@partnermax.ca"
+        <Link
+          href="/contact"
           className="pm-btn pm-btn--lg"
           style={{
             background: "transparent",
@@ -514,8 +438,8 @@ export default function AboutPage() {
             border: "1px solid rgba(255,255,255,.2)",
           }}
         >
-          Email Dean &amp; Brian
-        </a>
+          Contact Sales
+        </Link>
       </CtaBanner>
     </>
   );

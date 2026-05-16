@@ -50,13 +50,13 @@ export default function ContactPage() {
               </a>{" "}
               ·{" "}
               <a
-                href="tel:+14165550114"
+                href="tel:+19999999999"
                 style={{ color: "var(--pm-accent)" }}
               >
-                +1 416 555 0114
+                999 999 9999
               </a>
               <br />
-              Mon&ndash;Fri · 8a&ndash;6p ET · 255 Front St W, Toronto
+              Mon&ndash;Fri · 8a&ndash;6p ET · Placeholder St
             </p>
           </div>
         </div>

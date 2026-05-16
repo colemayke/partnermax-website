@@ -18,23 +18,6 @@ export default function SiteFooter() {
           </p>
         </div>
         <div className="site-footer__col">
-          <h4>Products</h4>
-          <ul>
-            <li>
-              <Link href="/#products">Business Wireless</Link>
-            </li>
-            <li>
-              <Link href="/#products">Dedicated Fibre</Link>
-            </li>
-            <li>
-              <Link href="/#products">Plans &amp; Voice</Link>
-            </li>
-            <li>
-              <Link href="/#products">Enterprise Connect</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="site-footer__col">
           <h4>Company</h4>
           <ul>
             <li>
@@ -52,33 +35,16 @@ export default function SiteFooter() {
           </ul>
         </div>
         <div className="site-footer__col">
-          <h4>For partners</h4>
-          <ul>
-            <li>
-              <a href="#">Become a reseller</a>
-            </li>
-            <li>
-              <a href="#">Partner portal</a>
-            </li>
-            <li>
-              <a href="#">Quote tool</a>
-            </li>
-            <li>
-              <a href="#">SLAs</a>
-            </li>
-          </ul>
-        </div>
-        <div className="site-footer__col">
           <h4>Reach us</h4>
           <ul>
             <li>
               <a href="mailto:hello@partnermax.ca">hello@partnermax.ca</a>
             </li>
             <li>
-              <a href="tel:+14165550114">+1 416 555 0114</a>
+              <a href="tel:+19999999999">999 999 9999</a>
             </li>
             <li>
-              <a href="#">255 Front St W, Toronto</a>
+              <a href="#">Placeholder St</a>
             </li>
             <li>
               <a href="#">Mon&ndash;Fri · 8a&ndash;6p ET</a>

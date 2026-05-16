@@ -44,9 +44,6 @@ export default function SiteNav() {
         </div>
       </div>
       <div className="site-nav__right">
-        <a href="#" className="site-nav__signin">
-          Sign in
-        </a>
         <Link href="/contact" className="site-nav__cta">
           Become a partner
         </Link>
