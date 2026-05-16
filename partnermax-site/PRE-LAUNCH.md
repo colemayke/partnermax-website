@@ -13,9 +13,11 @@ third party.
 
 ## Content (all currently prototype copy — replace before launch)
 
-- [ ] ⚠️ **Customer logos** — `app/components/LogoMarquee.tsx` ships `Rogers®`
-      + 7 dashed "Partner logo" placeholders. Replace with real signed-partner
-      marks. Drop SVGs in `public/assets/` and render real `<img>`/inline SVG.
+- [ ] ⚠️ **Customer logos** — `app/components/LogoMarquee.tsx` now renders the
+      real Rogers mark (`public/assets/rogers-logo.svg`) followed by 7 dashed
+      "Partner logo" placeholders. Replace the 7 placeholders with real
+      signed-partner marks (drop SVGs in `public/assets/`, render real
+      `<img>`/inline SVG).
 - [ ] ⚠️ **FAQ answers** — homepage `app/page.tsx` (`FAQ_ITEMS`) and process
       `app/process/page.tsx` (`PROCESS_FAQ`). Legal-review every answer
       (SLAs, ownership, billing claims).

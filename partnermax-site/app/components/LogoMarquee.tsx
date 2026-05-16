@@ -1,7 +1,8 @@
-/* Auto-scrolling customer strip. Rogers® + dashed placeholders are
-   prototype content — replace with real signed-partner marks before
-   launch (tracked in PRE-LAUNCH.md). SiteEffects clones the track once
-   for a seamless loop; hover pauses via CSS. */
+/* Auto-scrolling customer strip. Real Rogers mark
+   (/assets/rogers-logo.svg) + 7 dashed placeholders that still need real
+   signed-partner marks before launch (tracked in PRE-LAUNCH.md).
+   SiteEffects clones the track once for a seamless loop; hover pauses
+   via CSS. */
 export default function LogoMarquee() {
   return (
     <section className="site-logos">
@@ -10,7 +11,12 @@ export default function LogoMarquee() {
         <div className="site-marquee">
           <div className="site-marquee__track">
             <div className="site-marquee__item site-marquee__item--brand">
-              Rogers<sup>®</sup>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/rogers-logo.svg"
+                alt="Rogers"
+                style={{ height: 24, width: "auto", display: "block" }}
+              />
             </div>
             {Array.from({ length: 7 }).map((_, i) => (
               <div
