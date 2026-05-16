@@ -102,7 +102,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="01 / About"
-        bg="/assets/photo-vancouver.jpg"
+        variant="cinematic"
+        bg="/assets/skyline-toronto-dusk.jpg"
         title={
           <>
             An independent <em>Canadian</em> channel for business

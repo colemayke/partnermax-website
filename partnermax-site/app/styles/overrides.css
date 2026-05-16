@@ -196,3 +196,97 @@
     margin-bottom: 28px;
   }
 }
+
+/* ============================================================
+   PAGE HEROES — per-page treatments (added by request)
+
+   About + Process previously shared one hero (full-bleed image,
+   2-column bottom-aligned text). Split into two distinct treatments;
+   the default treatment (used by /contact) is left untouched.
+   ============================================================ */
+
+/* --- Cinematic (About): full-bleed image, a single centered
+   editorial column, taller band, symmetric darkening so centered
+   text stays legible (the handoff overlay is biased left). --- */
+.site-page-hero--cinematic {
+  padding-top: 240px;
+  padding-bottom: 150px;
+}
+.site-page-hero--cinematic .site-page-hero__bg::after {
+  background: linear-gradient(
+    180deg,
+    rgba(12, 13, 13, 0.5) 0%,
+    rgba(12, 13, 13, 0.55) 45%,
+    rgba(12, 13, 13, 0.92) 100%
+  );
+}
+.site-page-hero--cinematic .site-page-hero__body {
+  display: block;
+  max-width: 940px;
+  text-align: center;
+}
+.site-page-hero--cinematic .site-page-hero__eyebrow {
+  justify-content: center;
+}
+.site-page-hero--cinematic .site-page-hero__h {
+  max-width: 18ch;
+  margin-inline: auto;
+}
+.site-page-hero--cinematic .site-page-hero__p {
+  margin: 28px auto 0;
+  max-width: 60ch;
+  color: var(--pm-ink-200);
+}
+
+/* --- Minimal (Process): full-bleed but airy. A lighter, mostly
+   top-biased scrim so the golden-hour sky stays open; compact band;
+   left-aligned text; the red ::before glow is dialled right back so
+   the page reads calm rather than heavy (the deliberate contrast to
+   About's dark cinematic). --- */
+.site-page-hero--minimal {
+  padding-top: 168px;
+  padding-bottom: 84px;
+}
+.site-page-hero--minimal::before {
+  background: radial-gradient(
+    60% 80% at 80% 18%,
+    rgba(221, 0, 0, 0.07),
+    transparent 60%
+  );
+}
+.site-page-hero--minimal .site-page-hero__bg {
+  filter: brightness(0.62) contrast(1.02) saturate(0.95);
+}
+.site-page-hero--minimal .site-page-hero__bg::after {
+  background: linear-gradient(
+    180deg,
+    rgba(12, 13, 13, 0.58) 0%,
+    rgba(12, 13, 13, 0.3) 36%,
+    rgba(12, 13, 13, 0.1) 68%,
+    rgba(12, 13, 13, 0.32) 100%
+  );
+}
+.site-page-hero--minimal .site-page-hero__body {
+  display: block;
+  max-width: 880px;
+}
+.site-page-hero--minimal .site-page-hero__h {
+  font-size: clamp(40px, 5vw, 76px);
+  max-width: 16ch;
+}
+.site-page-hero--minimal .site-page-hero__p {
+  margin: 22px 0 0;
+  max-width: 52ch;
+  color: var(--pm-ink-200);
+}
+
+@media (max-width: 1100px) {
+  .site-page-hero--cinematic {
+    padding-top: 180px;
+    padding-bottom: 110px;
+  }
+  .site-page-hero--minimal {
+    padding-top: 140px;
+    padding-bottom: 72px;
+  }
+}

@@ -349,7 +349,8 @@ export default function ProcessPage() {
     <>
       <PageHero
         eyebrow="02 / Process"
-        bg="/assets/photo-rail.jpg"
+        variant="minimal"
+        bg="/assets/skyline-toronto-winter.jpg"
         title={
           <>
             Five steps,
