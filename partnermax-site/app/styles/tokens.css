@@ -1,0 +1,202 @@
+/* ============================================================
+   PartnerMax — Design Tokens
+   v1.0 · Lifted from the design handoff bundle (tokens.css).
+   The Google-Fonts @import was removed: fonts are self-hosted
+   via next/font (see app/layout.tsx) and exposed as the
+   --font-* CSS variables referenced below.
+   ============================================================ */
+
+:root {
+  /* ===== 1. Brand color — PartnerMax Red ===== */
+  --pm-red-50:  #fff1f1;
+  --pm-red-100: #ffdede;
+  --pm-red-200: #ffc0c0;
+  --pm-red-300: #ff9494;
+  --pm-red-400: #fe5555;
+  --pm-red-500: #f02121;
+  --pm-red-600: #dd0000;  /* hero brand */
+  --pm-red-700: #b80505;
+  --pm-red-800: #970909;
+  --pm-red-900: #7d0e0e;
+  --pm-red-950: #440505;
+
+  /* Wine (deep secondary, used in gradients) */
+  --pm-wine-500: #801818;
+  --pm-wine-700: #4a0c0c;
+  --pm-wine-900: #1a0505;
+
+  /* ===== 2. Neutrals — Charcoal scale ===== */
+  --pm-ink-0:   #ffffff;
+  --pm-ink-25:  #fafafa;
+  --pm-ink-50:  #f4f5f6;
+  --pm-ink-100: #e9ebed;
+  --pm-ink-200: #dcdfe2;
+  --pm-ink-300: #b9bfc4;
+  --pm-ink-400: #8b9299;
+  --pm-ink-500: #667684;  /* steel grey */
+  --pm-ink-600: #4a525a;
+  --pm-ink-700: #2f3439;
+  --pm-ink-800: #1a1c1e;
+  --pm-ink-900: #0c0d0d;  /* maximum dark */
+  --pm-ink-950: #050606;
+
+  /* Ivory — premium warm light surface */
+  --pm-ivory-50:  #faf8f5;
+  --pm-ivory-100: #f3efe8;
+  --pm-ivory-200: #e7dfd2;
+
+  /* ===== 3. Semantic ===== */
+  --pm-success-500: #16a368;
+  --pm-success-600: #0f8754;
+  --pm-success-bg:  #e6f5ee;
+  --pm-warning-500: #d68b1a;
+  --pm-warning-600: #b87010;
+  --pm-warning-bg:  #fbf1dc;
+  --pm-info-500:    #1f6feb;
+  --pm-info-600:    #1856c4;
+  --pm-info-bg:     #e6efff;
+  --pm-danger-500:  #dd0000;
+  --pm-danger-600:  #b80505;
+  --pm-danger-bg:   #fff1f1;
+
+  /* ===== 4. Surfaces (light theme — default) ===== */
+  --pm-bg:          var(--pm-ink-0);
+  --pm-bg-subtle:   var(--pm-ink-25);
+  --pm-bg-muted:    var(--pm-ink-50);
+  --pm-surface:     var(--pm-ink-0);
+  --pm-surface-raised: var(--pm-ink-0);
+  --pm-border:      var(--pm-ink-100);
+  --pm-border-strong: var(--pm-ink-200);
+  --pm-text:        var(--pm-ink-900);
+  --pm-text-muted:  var(--pm-ink-600);
+  --pm-text-subtle: var(--pm-ink-500);
+  --pm-text-inverse: var(--pm-ink-0);
+  --pm-accent:      var(--pm-red-600);
+  --pm-accent-hover: var(--pm-red-700);
+  --pm-focus-ring:  color-mix(in oklch, var(--pm-red-600) 35%, transparent);
+
+  /* ===== 5. Typography =====
+     Families resolve to the self-hosted next/font faces; the literal
+     family names are kept as fallbacks so the cascade still reads if
+     a variable is ever missing. */
+  --pm-font-display:   var(--font-bai-jamjuree), "Bai Jamjuree", ui-sans-serif, system-ui, sans-serif;
+  --pm-font-editorial: var(--font-bai-jamjuree), "Bai Jamjuree", ui-sans-serif, system-ui, sans-serif;
+  --pm-font-ui:        var(--font-manrope), "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --pm-font-body:      var(--font-manrope), "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --pm-font-mono:      var(--font-jetbrains-mono), "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Type scale (rem · base 16px) */
+  --pm-text-2xs: 0.6875rem;  /* 11 — fine print, eyebrow */
+  --pm-text-xs:  0.75rem;    /* 12 — caption */
+  --pm-text-sm:  0.875rem;   /* 14 — UI default */
+  --pm-text-base:1rem;       /* 16 — body */
+  --pm-text-lg:  1.125rem;   /* 18 — lead */
+  --pm-text-xl:  1.375rem;   /* 22 — h5 */
+  --pm-text-2xl: 1.75rem;    /* 28 — h4 */
+  --pm-text-3xl: 2.25rem;    /* 36 — h3 */
+  --pm-text-4xl: 3rem;       /* 48 — h2 */
+  --pm-text-5xl: 4rem;       /* 64 — h1 */
+  --pm-text-6xl: 5.5rem;     /* 88 — display */
+  --pm-text-7xl: 8rem;       /* 128 — hero */
+
+  --pm-lh-tight: 1;
+  --pm-lh-snug:  1.15;
+  --pm-lh-base:  1.5;
+  --pm-lh-relaxed: 1.65;
+
+  --pm-tracking-tight: -0.02em;
+  --pm-tracking-snug:  -0.01em;
+  --pm-tracking-normal: 0;
+  --pm-tracking-wide:   0.04em;
+  --pm-tracking-wider:  0.12em;
+
+  /* ===== 6. Spacing (4-pt base) ===== */
+  --pm-space-0: 0;
+  --pm-space-1: 0.25rem;
+  --pm-space-2: 0.5rem;
+  --pm-space-3: 0.75rem;
+  --pm-space-4: 1rem;
+  --pm-space-5: 1.5rem;
+  --pm-space-6: 2rem;
+  --pm-space-7: 2.5rem;
+  --pm-space-8: 3rem;
+  --pm-space-9: 4rem;
+  --pm-space-10: 5rem;
+  --pm-space-12: 6rem;
+  --pm-space-16: 8rem;
+  --pm-space-20: 10rem;
+
+  /* ===== 7. Radii ===== */
+  --pm-radius-none: 0;
+  --pm-radius-xs:   2px;
+  --pm-radius-sm:   4px;
+  --pm-radius-md:   6px;
+  --pm-radius-lg:   10px;
+  --pm-radius-xl:   16px;
+  --pm-radius-2xl:  24px;
+  --pm-radius-full: 999px;
+
+  /* ===== 8. Shadows ===== */
+  --pm-shadow-xs: 0 1px 2px rgba(12,13,13,.06);
+  --pm-shadow-sm: 0 1px 3px rgba(12,13,13,.08), 0 1px 2px rgba(12,13,13,.04);
+  --pm-shadow-md: 0 4px 12px rgba(12,13,13,.08), 0 2px 4px rgba(12,13,13,.04);
+  --pm-shadow-lg: 0 12px 32px rgba(12,13,13,.10), 0 4px 8px rgba(12,13,13,.04);
+  --pm-shadow-xl: 0 24px 64px rgba(12,13,13,.14);
+  --pm-shadow-red: 0 8px 24px rgba(221,0,0,.20);
+  --pm-shadow-inset: inset 0 1px 0 rgba(255,255,255,.06);
+
+  /* ===== 9. Motion ===== */
+  --pm-ease-out: cubic-bezier(.16,1,.3,1);
+  --pm-ease-in-out: cubic-bezier(.65,0,.35,1);
+  --pm-duration-fast: 120ms;
+  --pm-duration-base: 200ms;
+  --pm-duration-slow: 360ms;
+
+  /* ===== 10. Layout ===== */
+  --pm-container-sm: 640px;
+  --pm-container-md: 960px;
+  --pm-container-lg: 1200px;
+  --pm-container-xl: 1440px;
+  --pm-container-max: 1640px;
+
+  /* ===== 11. Gradients & visual ===== */
+  --pm-gradient-wine: linear-gradient(135deg, #DD0000 0%, #801818 55%, #1A0505 100%);
+  --pm-gradient-ink:  linear-gradient(180deg, #0c0d0d 0%, #1a1c1e 100%);
+  --pm-noise-overlay: radial-gradient(ellipse at top, rgba(221,0,0,.16), transparent 60%);
+}
+
+/* ===== Dark theme — apply via [data-theme="dark"] or .pm-dark ===== */
+[data-theme="dark"], .pm-dark {
+  --pm-bg:          var(--pm-ink-900);
+  --pm-bg-subtle:   var(--pm-ink-800);
+  --pm-bg-muted:    #14161a;
+  --pm-surface:     #14161a;
+  --pm-surface-raised: #1a1c1e;
+  --pm-border:      #25292d;
+  --pm-border-strong: #353a40;
+  --pm-text:        var(--pm-ink-0);
+  --pm-text-muted:  var(--pm-ink-300);
+  --pm-text-subtle: var(--pm-ink-400);
+  --pm-text-inverse: var(--pm-ink-900);
+  --pm-accent:      var(--pm-red-500);
+  --pm-accent-hover: var(--pm-red-400);
+  --pm-success-bg: rgba(22,163,104,.16);
+  --pm-warning-bg: rgba(214,139,26,.18);
+  --pm-info-bg:    rgba(31,111,235,.18);
+  --pm-danger-bg:  rgba(221,0,0,.18);
+}
+
+/* ===== Ivory theme — warm editorial light ===== */
+[data-theme="ivory"], .pm-ivory {
+  --pm-bg:          var(--pm-ivory-50);
+  --pm-bg-subtle:   var(--pm-ivory-100);
+  --pm-bg-muted:    var(--pm-ivory-200);
+  --pm-surface:     #ffffff;
+  --pm-border:      #e7dfd2;
+  --pm-border-strong: #d5cab8;
+  --pm-text:        var(--pm-ink-900);
+  --pm-text-muted:  #6b5d4a;
+  --pm-text-subtle: #9b8d78;
+  --pm-accent:      var(--pm-red-700);
+  --pm-accent-hover: var(--pm-red-800);
+}

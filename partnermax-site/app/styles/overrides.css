@@ -1,0 +1,198 @@
+/* ============================================================
+   PartnerMax — intentional post-handoff overrides
+   Deliberate deviations from the lifted prototype CSS, requested
+   after a design review. Kept in a separate file (imported last)
+   so site.css stays a clean verbatim lift of the handoff.
+   ============================================================ */
+
+/* ============================================================
+   HERO — full redo (the handoff layout was flawed for this page)
+
+   Problems fixed:
+   1. `.site-hero__body` was a 1.6fr / 1fr grid with an 80px gap, but
+      the homepage hero only has ONE content column — text was crammed
+      into ~60% width with dead space + a useless gap. Now a single
+      constrained editorial column.
+   2. `clamp(56px, 8vw, 128px)` overflowed the column on wide screens
+      (the line "The licensed channel for" was wider than the layout).
+      Re-scaled so the longest line always fits.
+   3. eyebrow → H1 → paragraph rhythm was uneven (32/32/40 against a
+      0.88 line-height). Replaced with an intentional vertical scale.
+   ============================================================ */
+
+/* Single, constrained, bottom-anchored column (kill the broken grid). */
+.site-hero__body {
+  display: block;
+  max-width: 1180px;
+}
+.site-hero__body > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Eyebrow — clear but connected to the headline. */
+.site-hero__eyebrow {
+  margin-bottom: 28px;
+}
+
+/* Headline — re-scaled so the longest line fits the column, with a
+   slightly looser line-height so the two lines + italic accent breathe.
+   Reveal wrapper padding trimmed so it doesn't inflate the rhythm. */
+.site-hero__h {
+  font-size: clamp(40px, 6vw, 88px);
+  letter-spacing: -0.03em;
+  line-height: 0.98;
+  margin: 0 0 26px;
+}
+.site-hero__h .reveal-text__line { padding: 0.02em 0; }
+
+/* Supporting paragraph ("caption") — readable measure, even gap to the
+   headline above and the CTAs below. */
+.site-hero__p {
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 0 0 40px;
+  max-width: 54ch;
+}
+
+/* CTAs — clear separation between the two buttons. */
+.site-hero__cta { gap: 16px; }
+
+/* Scroll cue — was rendering too large. */
+.site-hero__scroll { font-size: 10px; letter-spacing: 0.14em; }
+.site-hero__scroll::after { width: 48px; }
+
+@media (max-width: 700px) {
+  .site-hero__h { line-height: 1.02; margin-bottom: 22px; }
+  .site-hero__eyebrow { margin-bottom: 22px; }
+  .site-hero__p { margin-bottom: 32px; }
+}
+
+/* ============================================================
+   SECTION HEADERS — the "01 / 02 / 03" blocks (.site-block-head)
+
+   The big red number stacks above the small caption label with only
+   a 12px gap, but the number carries an animated underline
+   (::after, bottom: -16px, 3px tall) that draws in on scroll. 16+3
+   > 12, so the red bar ran straight through the label text. Give the
+   number room for its underline, and even out the number→title
+   alignment so the column reads cleanly as it reveals.
+   ============================================================ */
+.site-block-head__eyebrow {
+  gap: 30px;
+}
+.site-block-head__num {
+  /* a touch more optical separation from the underline that grows
+     beneath it */
+  margin-bottom: 4px;
+}
+.site-block-head {
+  align-items: start;
+  gap: 56px;
+}
+
+@media (max-width: 1100px) {
+  .site-block-head__eyebrow { gap: 24px; }
+  .site-block-head { gap: 28px; }
+}
+
+/* ============================================================
+   ABOUT — wider team grid (added by request)
+
+   Two managing partners stay as the large .site-team cards; this is
+   the secondary tier of employees beneath them. New element, not in
+   the handoff, but built from the same design language (initials +
+   red italic accent, same radii/borders/hover as the partner cards).
+   ============================================================ */
+.site-team-more {
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--pm-border);
+}
+.site-team-more__head {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 56px;
+  align-items: start;
+  margin-bottom: 36px;
+}
+.site-team-more__label {
+  font-family: var(--pm-font-display);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pm-text-subtle);
+}
+.site-team-more__note {
+  font-family: var(--pm-font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--pm-text-muted);
+  margin: 0;
+  max-width: 58ch;
+}
+.site-team-more__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.site-team-mini {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  background: var(--pm-surface);
+  border: 1px solid var(--pm-border);
+  border-radius: var(--pm-radius-lg);
+  transition: border-color var(--pm-duration-base) var(--pm-ease-out),
+              transform var(--pm-duration-base) var(--pm-ease-out),
+              box-shadow var(--pm-duration-base) var(--pm-ease-out);
+}
+.site-team-mini:hover {
+  border-color: var(--pm-ink-900);
+  transform: translateY(-2px);
+  box-shadow: var(--pm-shadow-md);
+}
+.site-team-mini__avatar {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2f3439 0%, #0c0d0d 100%);
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--pm-font-display);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+.site-team-mini__avatar em {
+  font-family: var(--pm-font-editorial);
+  font-style: italic;
+  color: var(--pm-red-500);
+}
+.site-team-mini__name {
+  font-family: var(--pm-font-display);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin: 0 0 3px;
+}
+.site-team-mini__role {
+  font-family: var(--pm-font-body);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--pm-text-muted);
+}
+
+@media (max-width: 1100px) {
+  .site-team-more__head {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+}

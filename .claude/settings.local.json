@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -nE \"^#{2,4} |async|params|searchParams|Removed|removed|Deprecat|deprecat|breaking|Breaking|default chang|no longer\" /Users/colemayke/.claude/projects/-Users-colemayke-Documents-GitHub-partnermax-website/c16d6133-ea77-4e1b-aad1-4396f767a8dc/tool-results/bxov9g896.txt)",
+      "Bash(mkdir -p public/assets app/styles app/components)",
+      "Bash(cp ../design_handoff_partnermax/assets/*.svg ../design_handoff_partnermax/assets/*.jpg public/assets/)",
+      "Bash(rm -f public/next.svg public/vercel.svg public/file.svg public/globe.svg public/window.svg)",
+      "Bash(sed '1451,1566d' design_handoff_partnermax/site.css)",
+      "Bash(sed -n '1445,1455p' partnermax-site/app/styles/site.css)",
+      "Bash(timeout 240 npx next build)",
+      "Bash(npx next *)",
+      "Bash(npx eslint *)",
+      "Bash(curl -s http://localhost:3210/)",
+      "Bash(pkill -f \"next start -p 3210\")",
+      "Bash(npm install *)",
+      "Bash(node -e \"console.log\\('resend', require\\('resend/package.json'\\).version\\)\")",
+      "Bash(pkill -f \"next start\")",
+      "Bash(git check-ignore *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash([ -x \"$CHROME\" ])",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --window-size=1440,900 --screenshot=/tmp/pm-hero.png --virtual-time-budget=4000 http://localhost:3000/)",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"http://localhost:3000/?cb=$\\(date +%s\\)\")",
+      "Bash(:)",
+      "Bash(curl -s http://localhost:3000__TRACKED_VAR__)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:3000/?x=$\\(date +%s\\)\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/contact)",
+      "Bash(curl -s http://localhost:3000/contact)",
+      "Bash(echo \"[eslint exit $?]\")",
+      "Bash(curl -s \"http://localhost:3000/about?cb=$\\(date +%s\\)\")",
+      "Bash(curl -s http://localhost:3000/about)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/about)",
+      "Bash(curl -s -o /dev/null -w \"status %{http_code}\\\\n\" http://localhost:3000/about)"
+    ]
+  }
+}

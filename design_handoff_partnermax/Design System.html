@@ -1,0 +1,1347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PartnerMax · Design System</title>
+<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="design-system.css" />
+</head>
+<body data-screen-label="01 Design System">
+
+<div class="pm-page">
+
+  <!-- ============ NAV ============ -->
+  <aside class="pm-nav">
+    <div class="pm-nav__brand">
+      <img src="assets/partnermax-logo-light.svg" alt="PartnerMax" />
+      <span class="pm-nav__tagline">Design System · v1.0</span>
+    </div>
+
+    <div class="pm-nav__section">
+      <span class="pm-nav__heading">Foundations</span>
+      <a class="pm-nav__link" href="#logo"><span>Logo</span><span class="pm-nav__link__num">01</span></a>
+      <a class="pm-nav__link" href="#color"><span>Color</span><span class="pm-nav__link__num">02</span></a>
+      <a class="pm-nav__link" href="#typography"><span>Typography</span><span class="pm-nav__link__num">03</span></a>
+      <a class="pm-nav__link" href="#spacing"><span>Spacing &amp; primitives</span><span class="pm-nav__link__num">04</span></a>
+      <a class="pm-nav__link" href="#icons"><span>Iconography</span><span class="pm-nav__link__num">05</span></a>
+      <a class="pm-nav__link" href="#patterns"><span>Patterns</span><span class="pm-nav__link__num">06</span></a>
+    </div>
+
+    <div class="pm-nav__section">
+      <span class="pm-nav__heading">System</span>
+      <a class="pm-nav__link" href="#components"><span>Components</span><span class="pm-nav__link__num">07</span></a>
+      <a class="pm-nav__link" href="#voice"><span>Voice &amp; tone</span><span class="pm-nav__link__num">08</span></a>
+    </div>
+
+    <div class="pm-nav__section">
+      <span class="pm-nav__heading">In the wild</span>
+      <a class="pm-nav__link" href="#applications"><span>Applications</span><span class="pm-nav__link__num">09</span></a>
+      <a class="pm-nav__link" href="#tokens"><span>Tokens · for code</span><span class="pm-nav__link__num">10</span></a>
+    </div>
+
+    <div class="pm-nav__section" style="margin-top:auto;">
+      <span class="pm-nav__heading">Authored by</span>
+      <span style="font-family:var(--pm-font-editorial); font-size:13px; color:var(--pm-text-muted); line-height:1.5;">
+        The PartnerMax brand team.<br/>For internal use and Claude Code / Claude Design.
+      </span>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="pm-main">
+
+    <!-- ============ TITLE ============ -->
+    <section class="pm-title" data-screen-label="01 Title">
+      <div class="pm-title__top">
+        <img src="assets/partnermax-logo.svg" alt="PartnerMax" />
+        <span>Design System · Volume One</span>
+      </div>
+
+      <div class="pm-title__center">
+        <h1 class="pm-title__hero">
+          The system<br/>behind <em>every</em><br/>partnership.
+        </h1>
+        <dl class="pm-title__meta">
+          <div><dt>Version</dt><dd>1.0 · May 2026</dd></div>
+          <div><dt>Audience</dt><dd>Internal design, Claude Code, Claude Design</dd></div>
+          <div><dt>Status</dt><dd>Production</dd></div>
+        </dl>
+      </div>
+
+      <div class="pm-title__bottom">
+        <p>
+          PartnerMax is a B2B channel partnership company licensed to sell Rogers products
+          to businesses across Canada. This system codifies our brand &mdash; logo, color, type,
+          components and tone &mdash; into reusable tokens and rules so every page, deck and
+          document feels unmistakably ours.
+        </p>
+        <span class="pm-title__pg">P. 001 / 010</span>
+      </div>
+    </section>
+
+    <!-- ============ 01 LOGO ============ -->
+    <section id="logo" class="pm-section" data-screen-label="02 Logo">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">01</span><span>Logotype</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 002</span>
+      </div>
+      <h2 class="pm-section__title">The PartnerMax wordmark.</h2>
+      <p class="pm-section__lede">
+        Our identity is a single confident wordmark. &ldquo;PARTNER&rdquo; reads in neutral
+        weight, &ldquo;MAX&rdquo; carries the brand red and the custom <em>M</em> &mdash; a sharp
+        rooftop angle that signals scale and the peak of partnership.
+      </p>
+
+      <h3 class="pm-subhead">Primary lockup</h3>
+      <p class="pm-note">
+        The dark hero is the canonical context. The wordmark should breathe &mdash; never
+        crowd it with photography or competing type.
+      </p>
+      <div class="pm-logo-hero">
+        <img src="assets/partnermax-logo.svg" alt="PartnerMax logo on dark" />
+      </div>
+
+      <h3 class="pm-subhead">Variants</h3>
+      <p class="pm-note">Use the variant that gives the cleanest contrast for the surface.</p>
+      <div class="pm-logo-grid">
+        <div class="pm-logo-tile" style="background:var(--pm-ink-900);">
+          <img src="assets/partnermax-logo.svg" alt="" />
+          <span class="pm-logo-tile__label" style="color:rgba(255,255,255,.5);">01 · Primary on dark</span>
+        </div>
+        <div class="pm-logo-tile" style="background:var(--pm-ink-0); border:1px solid var(--pm-border);">
+          <img src="assets/partnermax-logo-light.svg" alt="" />
+          <span class="pm-logo-tile__label">02 · Primary on light</span>
+        </div>
+        <div class="pm-logo-tile" style="background:var(--pm-red-600);">
+          <img src="assets/partnermax-logo-sm.svg" alt="" />
+          <span class="pm-logo-tile__label" style="color:rgba(255,255,255,.6);">03 · Reverse on red</span>
+        </div>
+        <div class="pm-logo-tile" style="background:var(--pm-ivory-50); border:1px solid var(--pm-ivory-200);">
+          <img src="assets/partnermax-logo-mono-dark.svg" alt="" />
+          <span class="pm-logo-tile__label">04 · Mono dark / editorial</span>
+        </div>
+        <div class="pm-logo-tile" style="background:var(--pm-ink-700);">
+          <img src="assets/partnermax-logo-sm.svg" alt="" />
+          <span class="pm-logo-tile__label" style="color:rgba(255,255,255,.5);">05 · Mono white / utility</span>
+        </div>
+        <div class="pm-logo-tile" style="background:var(--pm-ink-0); border:1px solid var(--pm-border);">
+          <img src="assets/partnermax-logo-red.svg" alt="" />
+          <span class="pm-logo-tile__label">06 · One-color red</span>
+        </div>
+      </div>
+
+      <div class="pm-grid pm-grid--2 pm-mt-7" style="gap:var(--pm-space-7);">
+        <div>
+          <h3 class="pm-subhead" style="margin-top:0;">Clear space</h3>
+          <p class="pm-note">
+            Reserve clear space equal to the height of the cap-height (the &ldquo;P&rdquo;) on
+            all sides. No type, image or graphic element may enter this zone.
+          </p>
+          <div class="pm-clearspace">
+            <div class="pm-clearspace__box">
+              <div class="pm-clearspace__inner">
+                <img src="assets/partnermax-logo-light.svg" alt="" />
+              </div>
+              <span class="pm-clearspace__x" style="top:-7px; left:50%; transform:translateX(-50%);">×</span>
+              <span class="pm-clearspace__x" style="bottom:-7px; left:50%; transform:translateX(-50%);">×</span>
+              <span class="pm-clearspace__x" style="top:50%; left:-7px; transform:translateY(-50%);">×</span>
+              <span class="pm-clearspace__x" style="top:50%; right:-7px; transform:translateY(-50%);">×</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="pm-subhead" style="margin-top:0;">Minimum size</h3>
+          <p class="pm-note">
+            The wordmark must remain legible. Never render below the minimum size on its
+            respective medium.
+          </p>
+          <div class="pm-card" style="display:flex; align-items:center; gap:var(--pm-space-7); padding:var(--pm-space-7);">
+            <div style="display:flex; flex-direction:column; gap:var(--pm-space-4); align-items:flex-start;">
+              <img src="assets/partnermax-logo-light.svg" alt="" style="height:14px;" />
+              <span class="pm-mono" style="font-size:11px; color:var(--pm-text-muted);">Digital · 96 px wide</span>
+            </div>
+            <div style="width:1px; height:60px; background:var(--pm-border);"></div>
+            <div style="display:flex; flex-direction:column; gap:var(--pm-space-4); align-items:flex-start;">
+              <img src="assets/partnermax-logo-light.svg" alt="" style="height:18px;" />
+              <span class="pm-mono" style="font-size:11px; color:var(--pm-text-muted);">Print · 24 mm wide</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Misuse</h3>
+      <p class="pm-note">Eight things never to do with the wordmark.</p>
+      <div class="pm-grid pm-grid--4">
+        <div class="pm-misuse">
+          <div class="pm-misuse__demo"><img src="assets/partnermax-logo-light.svg" style="transform:rotate(-10deg);" alt="" /></div>
+          <div class="pm-misuse__label"><span class="pm-misuse__x">×</span> Don&rsquo;t rotate</div>
+          <small>The wordmark always sits horizontal.</small>
+        </div>
+        <div class="pm-misuse">
+          <div class="pm-misuse__demo"><img src="assets/partnermax-logo-light.svg" style="transform:scaleY(.5);" alt="" /></div>
+          <div class="pm-misuse__label"><span class="pm-misuse__x">×</span> Don&rsquo;t stretch</div>
+          <small>Preserve the original proportions.</small>
+        </div>
+        <div class="pm-misuse">
+          <div class="pm-misuse__demo" style="background:#0c0d0d;">
+            <img src="assets/partnermax-logo-light.svg" alt="" />
+          </div>
+          <div class="pm-misuse__label"><span class="pm-misuse__x">×</span> Don&rsquo;t flip the variant</div>
+          <small>Use the light-on-dark version on dark surfaces.</small>
+        </div>
+        <div class="pm-misuse">
+          <div class="pm-misuse__demo" style="background:linear-gradient(135deg,#7d0e0e,#1f8b5b);">
+            <img src="assets/partnermax-logo-sm.svg" alt="" />
+          </div>
+          <div class="pm-misuse__label"><span class="pm-misuse__x">×</span> Don&rsquo;t place on busy gradients</div>
+          <small>Use a flat brand surface or photo with safe zone.</small>
+        </div>
+        <div class="pm-misuse">
+          <div class="pm-misuse__demo">
+            <div style="display:flex; gap:4px; align-items:center;">
+              <img src="assets/partnermax-logo-light.svg" alt="" style="height:18px;" />
+              <span style="font-family:var(--pm-font-display); font-weight:700; font-size:18px;">.io</span>
+            </div>
+          </div>
+          <div class="pm-misuse__label"><span class="pm-misuse__x">×</span> Don&rsquo;t add taglines inline</div>
+          <small>Keep the wordmark as a standalone unit.</small>
+        </div>
+        <div class="pm-misuse">
+          <div class="pm-misuse__demo"><img src="assets/partnermax-logo-light.svg" style="filter:hue-rotate(180deg);" alt="" /></div>
+          <div class="pm-misuse__label"><span class="pm-misuse__x">×</span> Don&rsquo;t recolor the MAX</div>
+          <small>Red is fixed; do not substitute another color.</small>
+        </div>
+        <div class="pm-misuse">
+          <div class="pm-misuse__demo"><img src="assets/partnermax-logo-light.svg" style="filter:drop-shadow(2px 4px 4px rgba(0,0,0,.4));" alt="" /></div>
+          <div class="pm-misuse__label"><span class="pm-misuse__x">×</span> Don&rsquo;t add effects</div>
+          <small>No drop shadows, glow, bevel or 3D.</small>
+        </div>
+        <div class="pm-misuse">
+          <div class="pm-misuse__demo">
+            <div style="background:#fff; border:2px solid var(--pm-red-600); padding:6px 10px; border-radius:99px;">
+              <img src="assets/partnermax-logo-light.svg" alt="" style="height:14px; display:block;" />
+            </div>
+          </div>
+          <div class="pm-misuse__label"><span class="pm-misuse__x">×</span> Don&rsquo;t enclose</div>
+          <small>The wordmark stands alone; no containers.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 COLOR ============ -->
+    <section id="color" class="pm-section" data-screen-label="03 Color">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">02</span><span>Color palette</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 003</span>
+      </div>
+      <h2 class="pm-section__title">A precise red.<br/>An honest grey.</h2>
+      <p class="pm-section__lede">
+        Our palette is intentionally narrow. PartnerMax Red carries energy and authority.
+        Maximum Dark is the canvas. Steel Grey is the engineered, neutral connective tissue.
+        Everything else &mdash; semantic states, light surfaces &mdash; is derived.
+      </p>
+
+      <h3 class="pm-subhead">Primary</h3>
+      <div class="pm-grid pm-grid--4">
+        <div class="pm-swatch">
+          <div class="pm-swatch__chip" style="background:var(--pm-red-600);">
+            <span class="pm-swatch__chip-label">PartnerMax Red</span>
+          </div>
+          <div class="pm-swatch__meta">
+            <span class="pm-swatch__meta__name">#DD0000 · rgb(221, 0, 0)</span>
+            <span class="pm-swatch__meta__var">--pm-red-600</span>
+            <span class="pm-swatch__meta__var">Pantone 485 C · CMYK 0/100/100/0</span>
+          </div>
+        </div>
+        <div class="pm-swatch">
+          <div class="pm-swatch__chip" style="background:var(--pm-ink-900);">
+            <span class="pm-swatch__chip-label">Maximum Dark</span>
+          </div>
+          <div class="pm-swatch__meta">
+            <span class="pm-swatch__meta__name">#0C0D0D · rgb(12, 13, 13)</span>
+            <span class="pm-swatch__meta__var">--pm-ink-900</span>
+            <span class="pm-swatch__meta__var">Pantone Black 6 C · CMYK 0/0/0/100</span>
+          </div>
+        </div>
+        <div class="pm-swatch">
+          <div class="pm-swatch__chip" style="background:var(--pm-ink-500);">
+            <span class="pm-swatch__chip-label">Steel Grey</span>
+          </div>
+          <div class="pm-swatch__meta">
+            <span class="pm-swatch__meta__name">#667684 · rgb(102, 118, 132)</span>
+            <span class="pm-swatch__meta__var">--pm-ink-500</span>
+            <span class="pm-swatch__meta__var">Pantone Cool Gray 9 C</span>
+          </div>
+        </div>
+        <div class="pm-swatch">
+          <div class="pm-swatch__chip pm-swatch__chip--ink" style="background:var(--pm-ivory-50); border-bottom:1px solid var(--pm-border);">
+            <span class="pm-swatch__chip-label">Bone White</span>
+          </div>
+          <div class="pm-swatch__meta">
+            <span class="pm-swatch__meta__name">#FAF8F5 · rgb(250, 248, 245)</span>
+            <span class="pm-swatch__meta__var">--pm-ivory-50</span>
+            <span class="pm-swatch__meta__var">Premium light surface</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Signature gradient</h3>
+      <p class="pm-note">
+        Use sparingly. Reserved for hero moments and the back of high-stakes covers &mdash;
+        sales decks, capability slides, signage. Never as a UI fill.
+      </p>
+      <div style="height:180px; border-radius:var(--pm-radius-md); background:var(--pm-gradient-wine); position:relative; display:flex; align-items:flex-end; justify-content:space-between; padding:var(--pm-space-5); color:white;">
+        <span style="font-family:var(--pm-font-display); font-weight:700; font-size:var(--pm-text-2xl); letter-spacing:var(--pm-tracking-tight);">Wine Gradient</span>
+        <span class="pm-mono" style="font-size:var(--pm-text-xs); opacity:.8;">--pm-gradient-wine · #DD0000 → #801818 → #1A0505</span>
+      </div>
+
+      <h3 class="pm-subhead">Red scale</h3>
+      <div class="pm-scale">
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-red-50);"><span class="pm-scale__step__num">50</span>#fff1f1</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-red-100);"><span class="pm-scale__step__num">100</span>#ffdede</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-red-200);"><span class="pm-scale__step__num">200</span>#ffc0c0</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-red-300);"><span class="pm-scale__step__num">300</span>#ff9494</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-red-400);"><span class="pm-scale__step__num">400</span>#fe5555</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-red-500);"><span class="pm-scale__step__num">500</span>#f02121</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-red-600);"><span class="pm-scale__step__num">600</span>#dd0000</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-red-700);"><span class="pm-scale__step__num">700</span>#b80505</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-red-800);"><span class="pm-scale__step__num">800</span>#970909</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-red-900);"><span class="pm-scale__step__num">900</span>#7d0e0e</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-red-950);"><span class="pm-scale__step__num">950</span>#440505</div>
+      </div>
+
+      <h3 class="pm-subhead">Ink (neutral) scale</h3>
+      <div class="pm-scale">
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-ink-0);"><span class="pm-scale__step__num">0</span>#ffffff</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-ink-25);"><span class="pm-scale__step__num">25</span>#fafafa</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-ink-50);"><span class="pm-scale__step__num">50</span>#f4f5f6</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-ink-100);"><span class="pm-scale__step__num">100</span>#e9ebed</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-ink-200);"><span class="pm-scale__step__num">200</span>#dcdfe2</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-ink-300);"><span class="pm-scale__step__num">300</span>#b9bfc4</div>
+        <div class="pm-scale__step pm-scale__step--light" style="background:var(--pm-ink-400);"><span class="pm-scale__step__num">400</span>#8b9299</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-ink-500);"><span class="pm-scale__step__num">500</span>#667684</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-ink-600);"><span class="pm-scale__step__num">600</span>#4a525a</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-ink-700);"><span class="pm-scale__step__num">700</span>#2f3439</div>
+        <div class="pm-scale__step pm-scale__step--dark" style="background:var(--pm-ink-900);"><span class="pm-scale__step__num">900</span>#0c0d0d</div>
+      </div>
+
+      <h3 class="pm-subhead">Semantic states</h3>
+      <div class="pm-grid pm-grid--4">
+        <div class="pm-swatch">
+          <div class="pm-swatch__chip" style="background:var(--pm-success-500);"><span class="pm-swatch__chip-label">Success</span></div>
+          <div class="pm-swatch__meta"><span class="pm-swatch__meta__name">#16A368</span><span class="pm-swatch__meta__var">--pm-success-500</span></div>
+        </div>
+        <div class="pm-swatch">
+          <div class="pm-swatch__chip" style="background:var(--pm-warning-500);"><span class="pm-swatch__chip-label">Warning</span></div>
+          <div class="pm-swatch__meta"><span class="pm-swatch__meta__name">#D68B1A</span><span class="pm-swatch__meta__var">--pm-warning-500</span></div>
+        </div>
+        <div class="pm-swatch">
+          <div class="pm-swatch__chip" style="background:var(--pm-info-500);"><span class="pm-swatch__chip-label">Info</span></div>
+          <div class="pm-swatch__meta"><span class="pm-swatch__meta__name">#1F6FEB</span><span class="pm-swatch__meta__var">--pm-info-500</span></div>
+        </div>
+        <div class="pm-swatch">
+          <div class="pm-swatch__chip" style="background:var(--pm-danger-500);"><span class="pm-swatch__chip-label">Danger</span></div>
+          <div class="pm-swatch__meta"><span class="pm-swatch__meta__name">#DD0000</span><span class="pm-swatch__meta__var">--pm-danger-500 · = brand red</span></div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Theme surfaces</h3>
+      <p class="pm-note">
+        Three surface modes derived from the same tokens. Apply with
+        <code class="pm-mono" style="background:var(--pm-bg-subtle); padding:2px 6px; border-radius:3px;">data-theme="dark"</code>
+        or <code class="pm-mono" style="background:var(--pm-bg-subtle); padding:2px 6px; border-radius:3px;">data-theme="ivory"</code> on any container.
+      </p>
+      <div class="pm-grid pm-grid--3">
+        <div class="pm-card" style="padding:0; overflow:hidden;">
+          <div style="background:var(--pm-ink-0); padding:var(--pm-space-7); display:flex; flex-direction:column; gap:var(--pm-space-3); min-height:200px;">
+            <span class="pm-tag pm-tag--dot">Theme · Light</span>
+            <h4 style="font-family:var(--pm-font-display); font-size:24px; margin:0; line-height:1.1;">Default surface</h4>
+            <p style="font-family:var(--pm-font-editorial); font-size:14px; color:var(--pm-ink-600); margin:0;">For product UI and dense reading. The widest accessibility margin.</p>
+          </div>
+        </div>
+        <div class="pm-card" style="padding:0; overflow:hidden;">
+          <div style="background:var(--pm-ink-900); color:white; padding:var(--pm-space-7); display:flex; flex-direction:column; gap:var(--pm-space-3); min-height:200px;">
+            <span class="pm-tag pm-tag--dot" style="border-color:rgba(255,255,255,.2); color:rgba(255,255,255,.7);">Theme · Dark</span>
+            <h4 style="font-family:var(--pm-font-display); font-size:24px; margin:0; line-height:1.1;">Premium surface</h4>
+            <p style="font-family:var(--pm-font-editorial); font-size:14px; color:var(--pm-ink-300); margin:0;">Default for marketing, decks and brand moments. Lets the red carry weight.</p>
+          </div>
+        </div>
+        <div class="pm-card" style="padding:0; overflow:hidden;">
+          <div style="background:var(--pm-ivory-50); padding:var(--pm-space-7); display:flex; flex-direction:column; gap:var(--pm-space-3); min-height:200px; border:1px solid var(--pm-ivory-200);">
+            <span class="pm-tag pm-tag--dot">Theme · Ivory</span>
+            <h4 style="font-family:var(--pm-font-display); font-size:24px; margin:0; line-height:1.1;">Editorial surface</h4>
+            <p style="font-family:var(--pm-font-editorial); font-size:14px; color:#6b5d4a; margin:0;">Warm light for long-form: capabilities decks, partnership memos, whitepapers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 TYPOGRAPHY ============ -->
+    <section id="typography" class="pm-section" data-screen-label="04 Typography">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">03</span><span>Typography</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 004</span>
+      </div>
+      <h2 class="pm-section__title">Sharp display.<br/>Considered prose.</h2>
+      <p class="pm-section__lede">
+        Three typefaces, each with a clear role. Bai Jamjuree handles every moment that
+        wants to assert &mdash; titles, navigation, buttons. Bai Jamjuree Italic handles every moment
+        that wants to <em>explain</em> &mdash; body copy, decks, narrative. Manrope handles the
+        UI and any place a screen needs to disappear.
+      </p>
+
+      <div class="pm-grid pm-grid--3">
+        <div class="pm-specimen">
+          <div class="pm-specimen__hero" style="font-family:var(--pm-font-display); color:var(--pm-ink-900);">Aa</div>
+          <div class="pm-specimen__body">
+            <span class="pm-specimen__role">01 · Display + headings</span>
+            <span class="pm-specimen__name">Bai Jamjuree</span>
+            <p class="pm-specimen__desc">Confident, modern grotesque. Use for every headline, every button, every navigation label. Tight tracking at display sizes.</p>
+            <div class="pm-specimen__weights">
+              <span>400 Regular</span><span>500 Medium</span><span>600 SemiBold</span><span>700 Bold</span>
+            </div>
+          </div>
+        </div>
+        <div class="pm-specimen">
+          <div class="pm-specimen__hero" style="font-family:var(--pm-font-editorial); font-style:italic; color:var(--pm-red-700);">Aa</div>
+          <div class="pm-specimen__body">
+            <span class="pm-specimen__role">02 · Editorial body</span>
+            <span class="pm-specimen__name">Bai Jamjuree Italic</span>
+            <p class="pm-specimen__desc">Modern serif for long-form. Always paired with Bai Jamjuree &mdash; never used alone for a headline. The italic is our accent.</p>
+            <div class="pm-specimen__weights">
+              <span>300 Light italic</span><span>400 Regular</span><span>500 Medium</span><span>600 SemiBold</span>
+            </div>
+          </div>
+        </div>
+        <div class="pm-specimen">
+          <div class="pm-specimen__hero" style="font-family:var(--pm-font-ui); color:var(--pm-ink-700); font-weight:600;">Aa</div>
+          <div class="pm-specimen__body">
+            <span class="pm-specimen__role">03 · UI &amp; data</span>
+            <span class="pm-specimen__name">Inter</span>
+            <p class="pm-specimen__desc">For product UI: form labels, tables, dashboards, tooltips, and anywhere optical character recognition matters at small sizes.</p>
+            <div class="pm-specimen__weights">
+              <span>400 Regular</span><span>500 Medium</span><span>600 SemiBold</span><span>700 Bold</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Hierarchy</h3>
+      <div>
+        <div class="pm-type-spec">
+          <h1 class="pm-type-spec__sample" style="font-family:var(--pm-font-display); font-weight:700; font-size:5rem; letter-spacing:-0.03em; line-height:.95;">A confident headline that <em style="font-family:var(--pm-font-editorial); font-style:italic; color:var(--pm-red-600);">leads</em>.</h1>
+          <div class="pm-type-spec__meta">
+            <strong>Display · H1</strong>
+            <span>Bai Jamjuree Bold</span>
+            <code>80px / 95% / -0.03em</code>
+            <code>--pm-text-5xl</code>
+          </div>
+        </div>
+        <div class="pm-type-spec">
+          <h2 class="pm-type-spec__sample" style="font-family:var(--pm-font-display); font-weight:700; font-size:3rem; letter-spacing:-0.025em; line-height:1;">Section title — clear and direct.</h2>
+          <div class="pm-type-spec__meta">
+            <strong>H2</strong>
+            <span>Bai Jamjuree Bold</span>
+            <code>48px / 100% / -0.025em</code>
+            <code>--pm-text-4xl</code>
+          </div>
+        </div>
+        <div class="pm-type-spec">
+          <h3 class="pm-type-spec__sample" style="font-family:var(--pm-font-display); font-weight:700; font-size:2.25rem; letter-spacing:-0.02em; line-height:1.1;">Subsection — a paragraph’s headline.</h3>
+          <div class="pm-type-spec__meta">
+            <strong>H3</strong>
+            <span>Bai Jamjuree Bold</span>
+            <code>36px / 110% / -0.02em</code>
+            <code>--pm-text-3xl</code>
+          </div>
+        </div>
+        <div class="pm-type-spec">
+          <h4 class="pm-type-spec__sample" style="font-family:var(--pm-font-display); font-weight:600; font-size:1.75rem; letter-spacing:-0.015em; line-height:1.15;">Component or card title.</h4>
+          <div class="pm-type-spec__meta">
+            <strong>H4</strong>
+            <span>Bai Jamjuree SemiBold</span>
+            <code>28px / 115% / -0.015em</code>
+            <code>--pm-text-2xl</code>
+          </div>
+        </div>
+        <div class="pm-type-spec">
+          <p class="pm-type-spec__sample" style="font-family:var(--pm-font-editorial); font-size:1.375rem; line-height:1.55; max-width:50ch; margin:0;">Lede — Bai Jamjuree Italic carries the long form. It reads like a confident editorial, with room for italics like <em>this one</em>.</p>
+          <div class="pm-type-spec__meta">
+            <strong>Lede</strong>
+            <span>Bai Jamjuree Italic Regular</span>
+            <code>22px / 155%</code>
+            <code>--pm-text-xl</code>
+          </div>
+        </div>
+        <div class="pm-type-spec">
+          <p class="pm-type-spec__sample" style="font-family:var(--pm-font-editorial); font-size:1.125rem; line-height:1.65; max-width:62ch; margin:0;">Body — the workhorse for marketing prose, decks and partnership letters. Bai Jamjuree Italic 18 keeps texture without feeling decorative; it pairs with Bai Jamjuree heads at any density.</p>
+          <div class="pm-type-spec__meta">
+            <strong>Body editorial</strong>
+            <span>Bai Jamjuree Italic Regular</span>
+            <code>18px / 165%</code>
+            <code>--pm-text-lg</code>
+          </div>
+        </div>
+        <div class="pm-type-spec">
+          <p class="pm-type-spec__sample" style="font-family:var(--pm-font-ui); font-size:0.875rem; line-height:1.5; max-width:62ch; margin:0; color:var(--pm-ink-800);">UI body — Manrope at 14px is the screen workhorse. Tables, forms, dashboards, every place where information density matters more than texture.</p>
+          <div class="pm-type-spec__meta">
+            <strong>Body UI</strong>
+            <span>Manrope Regular</span>
+            <code>14px / 150%</code>
+            <code>--pm-text-sm</code>
+          </div>
+        </div>
+        <div class="pm-type-spec">
+          <p class="pm-type-spec__sample" style="font-family:var(--pm-font-display); font-size:0.6875rem; line-height:1; letter-spacing:0.12em; text-transform:uppercase; color:var(--pm-text-muted); margin:0;">Eyebrow · Tag · Section label</p>
+          <div class="pm-type-spec__meta">
+            <strong>Eyebrow</strong>
+            <span>Bai Jamjuree Medium · UPPERCASE</span>
+            <code>11px / 100% / +0.12em</code>
+            <code>--pm-text-2xs</code>
+          </div>
+        </div>
+        <div class="pm-type-spec">
+          <p class="pm-type-spec__sample pm-mono" style="font-size:0.75rem; line-height:1.5; margin:0;">SKU-RGRS-2026-0114 · monospace · for data &amp; identifiers</p>
+          <div class="pm-type-spec__meta">
+            <strong>Mono</strong>
+            <span>SF Mono / system</span>
+            <code>12px / 150%</code>
+            <code>--pm-font-mono</code>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">The signature pairing</h3>
+      <p class="pm-note">
+        Italic Bai Jamjuree Italic inside a bold Bai Jamjuree headline is our defining typographic
+        gesture. Use it for one phrase per surface &mdash; never two.
+      </p>
+      <div class="pm-card" style="padding:var(--pm-space-9); background:var(--pm-ink-900); color:white;">
+        <h2 style="font-family:var(--pm-font-display); font-weight:700; font-size:88px; letter-spacing:-0.035em; line-height:.92; margin:0;">
+          Sell Rogers products like <em style="font-family:var(--pm-font-editorial); font-style:italic; color:var(--pm-red-500);">you own</em> the channel.
+        </h2>
+      </div>
+    </section>
+
+    <!-- ============ 04 SPACING & primitives ============ -->
+    <section id="spacing" class="pm-section pm-section--ivory" data-screen-label="05 Spacing">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">04</span><span>Spacing &amp; primitives</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 005</span>
+      </div>
+      <h2 class="pm-section__title">A 4-point grid.<br/>Three radii. Five shadows.</h2>
+      <p class="pm-section__lede">
+        Build on a 4-point spacing grid. Reach for tight, structural radii — corporate, not soft.
+        Shadows stay restrained so the red can do the work.
+      </p>
+
+      <div class="pm-grid pm-grid--2" style="gap:var(--pm-space-9);">
+        <div>
+          <h3 class="pm-subhead" style="margin-top:0;">Spacing scale</h3>
+          <div>
+            <div class="pm-row"><span class="pm-row__name">space-1</span><span class="pm-row__val">4 px</span><span class="pm-row__viz" style="width:4px;"></span><span class="pm-row__var">--pm-space-1</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-2</span><span class="pm-row__val">8 px</span><span class="pm-row__viz" style="width:8px;"></span><span class="pm-row__var">--pm-space-2</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-3</span><span class="pm-row__val">12 px</span><span class="pm-row__viz" style="width:12px;"></span><span class="pm-row__var">--pm-space-3</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-4</span><span class="pm-row__val">16 px</span><span class="pm-row__viz" style="width:16px;"></span><span class="pm-row__var">--pm-space-4</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-5</span><span class="pm-row__val">24 px</span><span class="pm-row__viz" style="width:24px;"></span><span class="pm-row__var">--pm-space-5</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-6</span><span class="pm-row__val">32 px</span><span class="pm-row__viz" style="width:32px;"></span><span class="pm-row__var">--pm-space-6</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-7</span><span class="pm-row__val">40 px</span><span class="pm-row__viz" style="width:40px;"></span><span class="pm-row__var">--pm-space-7</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-8</span><span class="pm-row__val">48 px</span><span class="pm-row__viz" style="width:48px;"></span><span class="pm-row__var">--pm-space-8</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-9</span><span class="pm-row__val">64 px</span><span class="pm-row__viz" style="width:64px;"></span><span class="pm-row__var">--pm-space-9</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-10</span><span class="pm-row__val">80 px</span><span class="pm-row__viz" style="width:80px;"></span><span class="pm-row__var">--pm-space-10</span></div>
+            <div class="pm-row"><span class="pm-row__name">space-12</span><span class="pm-row__val">96 px</span><span class="pm-row__viz" style="width:96px;"></span><span class="pm-row__var">--pm-space-12</span></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="pm-subhead" style="margin-top:0;">Radius</h3>
+          <div class="pm-stack">
+            <div class="pm-radius-card">
+              <div class="pm-radius-card__box" style="border-radius:0;"></div>
+              <div class="pm-radius-card__meta">
+                <span class="pm-radius-card__name">none · structural</span>
+                <span class="pm-radius-card__var">0px · --pm-radius-none</span>
+              </div>
+            </div>
+            <div class="pm-radius-card">
+              <div class="pm-radius-card__box" style="border-radius:2px;"></div>
+              <div class="pm-radius-card__meta">
+                <span class="pm-radius-card__name">xs · inputs, badges</span>
+                <span class="pm-radius-card__var">2px · --pm-radius-xs</span>
+              </div>
+            </div>
+            <div class="pm-radius-card">
+              <div class="pm-radius-card__box" style="border-radius:4px;"></div>
+              <div class="pm-radius-card__meta">
+                <span class="pm-radius-card__name">sm · buttons, fields (default)</span>
+                <span class="pm-radius-card__var">4px · --pm-radius-sm</span>
+              </div>
+            </div>
+            <div class="pm-radius-card">
+              <div class="pm-radius-card__box" style="border-radius:10px;"></div>
+              <div class="pm-radius-card__meta">
+                <span class="pm-radius-card__name">lg · cards, panels</span>
+                <span class="pm-radius-card__var">10px · --pm-radius-lg</span>
+              </div>
+            </div>
+            <div class="pm-radius-card">
+              <div class="pm-radius-card__box" style="border-radius:16px;"></div>
+              <div class="pm-radius-card__meta">
+                <span class="pm-radius-card__name">xl · marketing hero blocks</span>
+                <span class="pm-radius-card__var">16px · --pm-radius-xl</span>
+              </div>
+            </div>
+            <div class="pm-radius-card">
+              <div class="pm-radius-card__box" style="border-radius:999px;"></div>
+              <div class="pm-radius-card__meta">
+                <span class="pm-radius-card__name">full · pill, avatar</span>
+                <span class="pm-radius-card__var">999px · --pm-radius-full</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Elevation · Shadows</h3>
+      <p class="pm-note">Restrained. Shadow is for hierarchy, not decoration.</p>
+      <div class="pm-grid pm-grid--5" style="grid-template-columns: repeat(5, 1fr);">
+        <div class="pm-shadow-card" style="box-shadow:var(--pm-shadow-xs);">
+          <span class="pm-shadow-card__name">xs</span><span class="pm-shadow-card__var">--pm-shadow-xs</span>
+        </div>
+        <div class="pm-shadow-card" style="box-shadow:var(--pm-shadow-sm);">
+          <span class="pm-shadow-card__name">sm</span><span class="pm-shadow-card__var">--pm-shadow-sm</span>
+        </div>
+        <div class="pm-shadow-card" style="box-shadow:var(--pm-shadow-md);">
+          <span class="pm-shadow-card__name">md</span><span class="pm-shadow-card__var">--pm-shadow-md</span>
+        </div>
+        <div class="pm-shadow-card" style="box-shadow:var(--pm-shadow-lg);">
+          <span class="pm-shadow-card__name">lg</span><span class="pm-shadow-card__var">--pm-shadow-lg</span>
+        </div>
+        <div class="pm-shadow-card" style="box-shadow:var(--pm-shadow-red);">
+          <span class="pm-shadow-card__name">red glow</span><span class="pm-shadow-card__var">--pm-shadow-red</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 ICONS ============ -->
+    <section id="icons" class="pm-section" data-screen-label="06 Icons">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">05</span><span>Iconography</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 006</span>
+      </div>
+      <h2 class="pm-section__title">Linear icons.<br/>Engineered to a 24 grid.</h2>
+      <p class="pm-section__lede">
+        Icons are drawn on a 24×24 grid with a 1.5px stroke. They are technical &mdash;
+        not playful. Use them to clarify, never to decorate. We extend the
+        <a href="https://lucide.dev" target="_blank" rel="noopener" style="color:var(--pm-accent);">Lucide</a> set
+        as our open-source baseline.
+      </p>
+
+      <div class="pm-grid pm-grid--2" style="gap:var(--pm-space-9);">
+        <div>
+          <h3 class="pm-subhead" style="margin-top:0;">Specifications</h3>
+          <div class="pm-card" style="padding:0;">
+            <div class="pm-row" style="padding:var(--pm-space-4) var(--pm-space-5);">
+              <span class="pm-row__name" style="width:130px;">Grid</span>
+              <span class="pm-row__val">24 × 24 px</span>
+              <span class="pm-row__var">--pm-icon-size</span>
+            </div>
+            <div class="pm-row" style="padding:var(--pm-space-4) var(--pm-space-5);">
+              <span class="pm-row__name" style="width:130px;">Stroke</span>
+              <span class="pm-row__val">1.5 px</span>
+              <span class="pm-row__var">stroke-width="1.5"</span>
+            </div>
+            <div class="pm-row" style="padding:var(--pm-space-4) var(--pm-space-5);">
+              <span class="pm-row__name" style="width:130px;">Caps / joins</span>
+              <span class="pm-row__val">round</span>
+              <span class="pm-row__var">stroke-linecap="round"</span>
+            </div>
+            <div class="pm-row" style="padding:var(--pm-space-4) var(--pm-space-5);">
+              <span class="pm-row__name" style="width:130px;">Padding</span>
+              <span class="pm-row__val">2 px</span>
+              <span class="pm-row__var">22 px artwork area</span>
+            </div>
+            <div class="pm-row" style="padding:var(--pm-space-4) var(--pm-space-5);">
+              <span class="pm-row__name" style="width:130px;">Color</span>
+              <span class="pm-row__val">currentColor</span>
+              <span class="pm-row__var">inherits from parent</span>
+            </div>
+            <div class="pm-row" style="padding:var(--pm-space-4) var(--pm-space-5);">
+              <span class="pm-row__name" style="width:130px;">Sizing</span>
+              <span class="pm-row__val">16 · 20 · 24 · 32</span>
+              <span class="pm-row__var">tabular sizes</span>
+            </div>
+          </div>
+          <p class="pm-note" style="margin-top:var(--pm-space-5);">
+            For new icons not in Lucide, design on the same 24×24 grid with 1.5px stroke and
+            optical 2px padding. Submit additions to the brand team for review.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="pm-subhead" style="margin-top:0;">Sizing</h3>
+          <div class="pm-card" style="display:flex; gap:var(--pm-space-7); align-items:flex-end; padding:var(--pm-space-7); flex-wrap:wrap;">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:var(--pm-space-2);">
+              <div data-icon="globe" style="width:16px; height:16px; color:var(--pm-ink-900);"></div>
+              <span class="pm-mono" style="font-size:11px; color:var(--pm-text-muted);">16 · sm</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:var(--pm-space-2);">
+              <div data-icon="globe" style="width:20px; height:20px; color:var(--pm-ink-900);"></div>
+              <span class="pm-mono" style="font-size:11px; color:var(--pm-text-muted);">20 · md</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:var(--pm-space-2);">
+              <div data-icon="globe" style="width:24px; height:24px; color:var(--pm-ink-900);"></div>
+              <span class="pm-mono" style="font-size:11px; color:var(--pm-text-muted);">24 · base</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:var(--pm-space-2);">
+              <div data-icon="globe" style="width:32px; height:32px; color:var(--pm-ink-900);"></div>
+              <span class="pm-mono" style="font-size:11px; color:var(--pm-text-muted);">32 · lg</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:var(--pm-space-2);">
+              <div data-icon="globe" style="width:48px; height:48px; color:var(--pm-red-600);"></div>
+              <span class="pm-mono" style="font-size:11px; color:var(--pm-text-muted);">48 · feature</span>
+            </div>
+          </div>
+
+          <h3 class="pm-subhead">Color usage</h3>
+          <div class="pm-grid pm-grid--3" style="gap:var(--pm-space-3);">
+            <div class="pm-card" style="display:flex; flex-direction:column; align-items:center; gap:8px; padding:var(--pm-space-5);">
+              <div data-icon="shield-check" style="width:32px; height:32px; color:var(--pm-ink-900);"></div>
+              <span class="pm-mono" style="font-size:10px; color:var(--pm-text-muted);">Ink — default UI</span>
+            </div>
+            <div class="pm-card" style="display:flex; flex-direction:column; align-items:center; gap:8px; padding:var(--pm-space-5);">
+              <div data-icon="shield-check" style="width:32px; height:32px; color:var(--pm-red-600);"></div>
+              <span class="pm-mono" style="font-size:10px; color:var(--pm-text-muted);">Red — emphasis</span>
+            </div>
+            <div class="pm-card" style="display:flex; flex-direction:column; align-items:center; gap:8px; padding:var(--pm-space-5); background:var(--pm-ink-900); color:white;">
+              <div data-icon="shield-check" style="width:32px; height:32px; color:var(--pm-ink-0);"></div>
+              <span class="pm-mono" style="font-size:10px; color:rgba(255,255,255,.5);">White — on dark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Core set</h3>
+      <p class="pm-note">A curated working set for the PartnerMax product, marketing, and sales surfaces.</p>
+      <div class="pm-icon-grid" id="icon-grid"></div>
+    </section>
+
+    <!-- ============ 06 PATTERNS ============ -->
+    <section id="patterns" class="pm-section pm-section--dark" data-screen-label="07 Patterns">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">06</span><span>Patterns &amp; visual elements</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 007</span>
+      </div>
+      <h2 class="pm-section__title">Material gestures.</h2>
+      <p class="pm-section__lede">
+        Three reusable visual primitives carry the brand beyond type and color. Use one
+        per surface &mdash; never stacked.
+      </p>
+
+      <div class="pm-grid pm-grid--3" style="gap:var(--pm-space-5);">
+        <div>
+          <div class="pm-pattern" style="background:var(--pm-ink-900); border:1px solid #25292d;">
+            <svg width="100%" height="100%" style="position:absolute; inset:0;" preserveAspectRatio="none">
+              <defs>
+                <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1" fill="rgba(221,0,0,0.35)" />
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#dot-pattern)" />
+            </svg>
+            <div style="position:relative; z-index:1; font-family:var(--pm-font-display); font-weight:700; font-size:54px; color:white; letter-spacing:-0.03em;">01</div>
+            <span class="pm-pattern__label" style="color:rgba(255,255,255,.5);">Red noise · scatter</span>
+          </div>
+          <div class="pm-mt-5" style="color:var(--pm-ink-300); font-family:var(--pm-font-editorial); font-size:14px; line-height:1.65;">
+            For dark hero surfaces. Always rendered on Maximum Dark with 30% opacity red dots.
+          </div>
+        </div>
+
+        <div>
+          <div class="pm-pattern" style="background:var(--pm-gradient-wine);">
+            <div style="position:relative; font-family:var(--pm-font-display); font-weight:700; font-size:54px; color:white; letter-spacing:-0.03em;">02</div>
+            <span class="pm-pattern__label" style="color:rgba(255,255,255,.7);">Wine gradient · 135°</span>
+          </div>
+          <div class="pm-mt-5" style="color:var(--pm-ink-300); font-family:var(--pm-font-editorial); font-size:14px; line-height:1.65;">
+            For deck covers and tier-one moments. Direction always top-left → bottom-right.
+          </div>
+        </div>
+
+        <div>
+          <div class="pm-pattern" style="background:var(--pm-ink-900); overflow:hidden;">
+            <div style="position:absolute; inset:0; background: radial-gradient(50% 70% at 80% 20%, rgba(221,0,0,.45), transparent 60%);"></div>
+            <div style="position:relative; font-family:var(--pm-font-display); font-weight:700; font-size:54px; color:white; letter-spacing:-0.03em;">03</div>
+            <span class="pm-pattern__label" style="color:rgba(255,255,255,.5);">Red glow · corner</span>
+          </div>
+          <div class="pm-mt-5" style="color:var(--pm-ink-300); font-family:var(--pm-font-editorial); font-size:14px; line-height:1.65;">
+            The default backdrop for product mockups, dashboards, and email headers on dark.
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Imagery direction</h3>
+      <p class="pm-note">
+        Photography is restrained, documentary, and Canadian-real. Real partner offices,
+        Rogers products in context, workplaces lit with cool morning light. No stock smiles.
+      </p>
+
+      <div class="pm-grid pm-grid--4" style="gap:var(--pm-space-3);">
+        <div style="border-radius:var(--pm-radius-md); aspect-ratio:1; background:linear-gradient(135deg,#1a1c1e,#0c0d0d); position:relative; overflow:hidden; padding:var(--pm-space-4); display:flex; flex-direction:column; justify-content:space-between;">
+          <div style="position:absolute; inset:0; background:radial-gradient(circle at 70% 30%, rgba(221,0,0,.3), transparent 60%);"></div>
+          <span class="pm-tag" style="position:relative; background:transparent; border-color:rgba(255,255,255,.2); color:rgba(255,255,255,.7);">Documentary</span>
+          <span style="position:relative; font-family:var(--pm-font-editorial); font-size:13px; color:var(--pm-ink-300); line-height:1.4;">Partner office at 8am. Coffee, screens, real signage.</span>
+        </div>
+        <div style="border-radius:var(--pm-radius-md); aspect-ratio:1; background:linear-gradient(135deg,#2f3439,#0c0d0d); position:relative; overflow:hidden; padding:var(--pm-space-4); display:flex; flex-direction:column; justify-content:space-between;">
+          <span class="pm-tag" style="position:relative; background:transparent; border-color:rgba(255,255,255,.2); color:rgba(255,255,255,.7);">Product context</span>
+          <span style="position:relative; font-family:var(--pm-font-editorial); font-size:13px; color:var(--pm-ink-300); line-height:1.4;">Rogers hardware on a desk. Cropped tight. No people.</span>
+        </div>
+        <div style="border-radius:var(--pm-radius-md); aspect-ratio:1; background:linear-gradient(135deg,#4a525a,#1a1c1e); position:relative; overflow:hidden; padding:var(--pm-space-4); display:flex; flex-direction:column; justify-content:space-between;">
+          <span class="pm-tag" style="position:relative; background:transparent; border-color:rgba(255,255,255,.2); color:rgba(255,255,255,.7);">Architecture</span>
+          <span style="position:relative; font-family:var(--pm-font-editorial); font-size:13px; color:var(--pm-ink-300); line-height:1.4;">Canadian skylines, infrastructure, network towers at dusk.</span>
+        </div>
+        <div style="border-radius:var(--pm-radius-md); aspect-ratio:1; background:linear-gradient(135deg,#7d0e0e,#1a0505); position:relative; overflow:hidden; padding:var(--pm-space-4); display:flex; flex-direction:column; justify-content:space-between;">
+          <span class="pm-tag" style="position:relative; background:transparent; border-color:rgba(255,255,255,.2); color:rgba(255,255,255,.85);">Abstract</span>
+          <span style="position:relative; font-family:var(--pm-font-editorial); font-size:13px; color:rgba(255,255,255,.8); line-height:1.4;">Macro fiber-optic textures. Reserved for hero moments.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 COMPONENTS ============ -->
+    <section id="components" class="pm-section" data-screen-label="08 Components">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">07</span><span>Components</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 008</span>
+      </div>
+      <h2 class="pm-section__title">Buttons, forms,<br/>cards, and signals.</h2>
+      <p class="pm-section__lede">
+        The component layer composes the foundation into product surfaces. Five base
+        atoms: button, input, badge, card, stat. Everything else is composition.
+      </p>
+
+      <h3 class="pm-subhead">Buttons</h3>
+      <div class="pm-card">
+        <div class="pm-flex" style="gap:var(--pm-space-4);">
+          <button class="pm-btn pm-btn--primary">Become a partner</button>
+          <button class="pm-btn pm-btn--secondary">Talk to sales</button>
+          <button class="pm-btn pm-btn--outline">View pricing</button>
+          <button class="pm-btn pm-btn--ghost">Cancel</button>
+          <a href="#" class="pm-btn pm-btn--link">Read the docs →</a>
+        </div>
+        <div class="pm-flex pm-mt-5" style="gap:var(--pm-space-4);">
+          <button class="pm-btn pm-btn--primary pm-btn--lg">
+            <span>Become a partner</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+          <button class="pm-btn pm-btn--primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+            <span>Add line</span>
+          </button>
+          <button class="pm-btn pm-btn--primary pm-btn--sm">Save</button>
+          <button class="pm-btn pm-btn--primary" disabled>Disabled</button>
+        </div>
+        <p class="pm-note" style="margin:var(--pm-space-5) 0 0;">
+          Buttons are <strong style="font-family:var(--pm-font-display);">Bai Jamjuree Medium 14</strong>,
+          radius 4px, 11/18 padding. Primary uses brand red on every surface. Use only one
+          primary per view.
+        </p>
+      </div>
+
+      <h3 class="pm-subhead">Form</h3>
+      <div class="pm-grid pm-grid--2" style="gap:var(--pm-space-5);">
+        <div class="pm-card">
+          <form class="pm-stack" style="gap:var(--pm-space-4);" onsubmit="return false;">
+            <div class="pm-field">
+              <label class="pm-label" for="f-name">Legal business name</label>
+              <input id="f-name" class="pm-input" type="text" value="Northbridge Communications Inc." />
+              <span class="pm-hint">As registered with the CRA.</span>
+            </div>
+            <div class="pm-field">
+              <label class="pm-label" for="f-email">Business email</label>
+              <input id="f-email" class="pm-input" type="email" placeholder="ops@yourbusiness.ca" />
+            </div>
+            <div class="pm-field">
+              <label class="pm-label" for="f-prov">Province of operation</label>
+              <select id="f-prov" class="pm-select">
+                <option>Ontario</option><option>British Columbia</option><option>Alberta</option><option>Québec</option>
+              </select>
+            </div>
+            <div class="pm-field">
+              <label class="pm-label" for="f-note">Notes for the channel team</label>
+              <textarea id="f-note" class="pm-textarea" rows="3" placeholder="Optional context about your customer base."></textarea>
+            </div>
+            <div class="pm-flex" style="justify-content:flex-end; gap:var(--pm-space-3);">
+              <button class="pm-btn pm-btn--ghost">Cancel</button>
+              <button class="pm-btn pm-btn--primary">Submit application</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="pm-stack" style="gap:var(--pm-space-5);">
+          <div class="pm-card">
+            <h4 style="font-family:var(--pm-font-display); font-weight:600; margin:0 0 var(--pm-space-3); font-size:18px;">Field anatomy</h4>
+            <ul style="font-family:var(--pm-font-editorial); font-size:15px; line-height:1.7; margin:0; padding-left:18px; color:var(--pm-text-muted);">
+              <li>Label · Bai Jamjuree 12 Medium, 6px above the field</li>
+              <li>Input · Manrope 14 Regular, 10/12 padding, 1px border</li>
+              <li>Focus · 1px red border + 3px focus ring (red @ 35%)</li>
+              <li>Hint · Manrope 12 Regular, 6px below the field</li>
+            </ul>
+          </div>
+          <div class="pm-card">
+            <h4 style="font-family:var(--pm-font-display); font-weight:600; margin:0 0 var(--pm-space-3); font-size:18px;">States</h4>
+            <div class="pm-stack" style="gap:var(--pm-space-3);">
+              <div class="pm-field">
+                <label class="pm-label">Default</label>
+                <input class="pm-input" type="text" value="Northbridge Communications" />
+              </div>
+              <div class="pm-field">
+                <label class="pm-label">Error</label>
+                <input class="pm-input" type="text" value="ops@bademail" style="border-color:var(--pm-red-600); box-shadow:0 0 0 3px rgba(221,0,0,.18);" />
+                <span class="pm-hint" style="color:var(--pm-red-700);">Use a business domain — not a personal address.</span>
+              </div>
+              <div class="pm-field">
+                <label class="pm-label">Disabled</label>
+                <input class="pm-input" type="text" value="Locked field" disabled style="background:var(--pm-bg-subtle); color:var(--pm-text-subtle);" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Badges</h3>
+      <div class="pm-card">
+        <div class="pm-flex">
+          <span class="pm-badge">Default</span>
+          <span class="pm-badge pm-badge--brand">PartnerMax</span>
+          <span class="pm-badge pm-badge--success pm-badge--dot">Active</span>
+          <span class="pm-badge pm-badge--warning pm-badge--dot">Pending</span>
+          <span class="pm-badge pm-badge--info pm-badge--dot">Reviewing</span>
+          <span class="pm-badge" style="background:var(--pm-ink-900); color:white;">New</span>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Cards</h3>
+      <div class="pm-grid pm-grid--3">
+        <div class="pm-product-card">
+          <div class="pm-product-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18h14"/><path d="M5 14h14"/><circle cx="12" cy="8" r="3"/><path d="M3 21h18"/></svg>
+          </div>
+          <span class="pm-tag pm-tag--dot">Wireless</span>
+          <h4 class="pm-product-card__title">Rogers Business Wireless</h4>
+          <p class="pm-product-card__desc">Pooled data plans across your fleet, with a single bill, partner-managed.</p>
+          <div class="pm-product-card__meta">
+            <span class="pm-product-card__price">From <strong>$45</strong>/line/mo</span>
+            <a class="pm-btn pm-btn--link" href="#">Configure →</a>
+          </div>
+        </div>
+        <div class="pm-product-card">
+          <div class="pm-product-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>
+          </div>
+          <span class="pm-tag pm-tag--dot">Internet</span>
+          <h4 class="pm-product-card__title">Dedicated Business Fibre</h4>
+          <p class="pm-product-card__desc">Symmetric, SLA-backed internet from 250 Mbps to 10 Gbps. Provisioned in 14 days.</p>
+          <div class="pm-product-card__meta">
+            <span class="pm-product-card__price">From <strong>$199</strong>/mo</span>
+            <a class="pm-btn pm-btn--link" href="#">Configure →</a>
+          </div>
+        </div>
+        <div class="pm-product-card" style="background:var(--pm-ink-900); color:white; border-color:var(--pm-ink-700);">
+          <div class="pm-product-card__icon" style="background:var(--pm-red-600);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 4 9 8 10 4-1 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <span class="pm-tag pm-tag--dot" style="border-color:rgba(255,255,255,.2); color:rgba(255,255,255,.7);">Bundle</span>
+          <h4 class="pm-product-card__title">Enterprise Connect</h4>
+          <p class="pm-product-card__desc" style="color:var(--pm-ink-300);">Wireless + fibre + managed security, priced and provisioned as one. Our most-attached bundle.</p>
+          <div class="pm-product-card__meta" style="border-color:rgba(255,255,255,.1);">
+            <span class="pm-product-card__price" style="color:var(--pm-ink-300);">Quoted · custom</span>
+            <a class="pm-btn pm-btn--link" href="#" style="color:var(--pm-red-400);">Talk to a partner →</a>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Stats</h3>
+      <div class="pm-grid pm-grid--4">
+        <div class="pm-stat">
+          <span class="pm-stat__num">2,400<em>+</em></span>
+          <span class="pm-stat__label">active Canadian businesses</span>
+        </div>
+        <div class="pm-stat">
+          <span class="pm-stat__num">$<em>1.2</em>B</span>
+          <span class="pm-stat__label">in channel revenue routed</span>
+        </div>
+        <div class="pm-stat">
+          <span class="pm-stat__num">99.<em>97</em>%</span>
+          <span class="pm-stat__label">uptime on managed circuits</span>
+        </div>
+        <div class="pm-stat">
+          <span class="pm-stat__num"><em>14</em>d</span>
+          <span class="pm-stat__label">median provisioning time</span>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Inline alerts</h3>
+      <div class="pm-stack" style="gap:var(--pm-space-3);">
+        <div class="pm-card" style="display:flex; gap:var(--pm-space-4); border-left:3px solid var(--pm-success-500); align-items:flex-start;">
+          <div style="color:var(--pm-success-600);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div>
+            <strong style="font-family:var(--pm-font-display); font-size:14px;">Application approved</strong>
+            <p style="font-family:var(--pm-font-editorial); font-size:14px; line-height:1.55; margin:2px 0 0; color:var(--pm-text-muted);">Your partnership is active. Onboarding link sent to ops@northbridge.ca.</p>
+          </div>
+        </div>
+        <div class="pm-card" style="display:flex; gap:var(--pm-space-4); border-left:3px solid var(--pm-warning-500); align-items:flex-start;">
+          <div style="color:var(--pm-warning-600);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="m21.7 18-9-15a2 2 0 0 0-3.4 0l-9 15A2 2 0 0 0 2 21h20a2 2 0 0 0 1.7-3z"/></svg></div>
+          <div>
+            <strong style="font-family:var(--pm-font-display); font-size:14px;">Missing CRA documentation</strong>
+            <p style="font-family:var(--pm-font-editorial); font-size:14px; line-height:1.55; margin:2px 0 0; color:var(--pm-text-muted);">Upload your incorporation document to continue the application.</p>
+          </div>
+        </div>
+        <div class="pm-card" style="display:flex; gap:var(--pm-space-4); border-left:3px solid var(--pm-red-600); align-items:flex-start;">
+          <div style="color:var(--pm-red-600);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg></div>
+          <div>
+            <strong style="font-family:var(--pm-font-display); font-size:14px;">Application could not be submitted</strong>
+            <p style="font-family:var(--pm-font-editorial); font-size:14px; line-height:1.55; margin:2px 0 0; color:var(--pm-text-muted);">The CRA business number we found does not match the legal name provided.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Nav bar (dark)</h3>
+      <div class="pm-app-frame" style="background:var(--pm-ink-900); border-color:#25292d;">
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:18px 28px; color:white;">
+          <div style="display:flex; align-items:center; gap:36px;">
+            <img src="assets/partnermax-logo-sm.svg" alt="" style="height:16px;" />
+            <nav style="display:flex; gap:24px; font-family:var(--pm-font-display); font-size:14px; color:rgba(255,255,255,.75);">
+              <a href="#" style="color:white; text-decoration:none;">Solutions</a>
+              <a href="#" style="text-decoration:none; color:inherit;">For partners</a>
+              <a href="#" style="text-decoration:none; color:inherit;">Pricing</a>
+              <a href="#" style="text-decoration:none; color:inherit;">Insights</a>
+              <a href="#" style="text-decoration:none; color:inherit;">Company</a>
+            </nav>
+          </div>
+          <div style="display:flex; gap:12px; align-items:center;">
+            <a href="#" style="font-family:var(--pm-font-display); font-size:14px; color:rgba(255,255,255,.8); text-decoration:none;">Sign in</a>
+            <button class="pm-btn pm-btn--primary">Become a partner</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08 VOICE & TONE ============ -->
+    <section id="voice" class="pm-section pm-section--ivory" data-screen-label="09 Voice">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">08</span><span>Voice &amp; tone</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 009</span>
+      </div>
+      <h2 class="pm-section__title">Authoritative.<br/><em style="font-family:var(--pm-font-editorial); font-style:italic; color:var(--pm-red-700);">Engineered.</em><br/>Plainspoken.</h2>
+      <p class="pm-section__lede">
+        We are a B2B channel. We sell trust before we sell SKUs. Our writing reads like a
+        partner who knows the network &mdash; specific, calm, and confident enough not to oversell.
+      </p>
+
+      <h3 class="pm-subhead">Three principles</h3>
+      <div class="pm-grid pm-grid--3">
+        <div class="pm-card">
+          <span class="pm-tag pm-tag--dot">01</span>
+          <h4 style="font-family:var(--pm-font-display); font-weight:700; font-size:24px; margin:var(--pm-space-3) 0 var(--pm-space-2); letter-spacing:-0.015em;">Specific, not generic.</h4>
+          <p style="font-family:var(--pm-font-editorial); font-size:15px; line-height:1.65; color:var(--pm-text-muted); margin:0;">Numbers, names, and concrete outcomes. &ldquo;Provisioned in 14 days&rdquo; beats &ldquo;fast turnaround&rdquo;.</p>
+        </div>
+        <div class="pm-card">
+          <span class="pm-tag pm-tag--dot">02</span>
+          <h4 style="font-family:var(--pm-font-display); font-weight:700; font-size:24px; margin:var(--pm-space-3) 0 var(--pm-space-2); letter-spacing:-0.015em;">Direct, not slick.</h4>
+          <p style="font-family:var(--pm-font-editorial); font-size:15px; line-height:1.65; color:var(--pm-text-muted); margin:0;">Write the way you&rsquo;d brief an ops director: short sentences, no superlatives, no jargon for its own sake.</p>
+        </div>
+        <div class="pm-card">
+          <span class="pm-tag pm-tag--dot">03</span>
+          <h4 style="font-family:var(--pm-font-display); font-weight:700; font-size:24px; margin:var(--pm-space-3) 0 var(--pm-space-2); letter-spacing:-0.015em;">Partner-first.</h4>
+          <p style="font-family:var(--pm-font-editorial); font-size:15px; line-height:1.65; color:var(--pm-text-muted); margin:0;">Frame the product around what our channel partners <em>do</em> with it &mdash; not the technology spec sheet.</p>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Voice in practice</h3>
+      <div class="pm-voice">
+        <div class="pm-voice__card pm-voice__yes" style="background:white;">
+          <span class="pm-voice__tag">Yes</span>
+          <p class="pm-voice__quote">&ldquo;Pool 50 lines across your fleet. One bill, one partner, one renewal date.&rdquo;</p>
+        </div>
+        <div class="pm-voice__card pm-voice__no" style="background:white;">
+          <span class="pm-voice__tag">Not this</span>
+          <p class="pm-voice__quote">&ldquo;Unlock seamless next-generation wireless solutions and supercharge your business communications.&rdquo;</p>
+        </div>
+        <div class="pm-voice__card pm-voice__yes" style="background:white;">
+          <span class="pm-voice__tag">Yes</span>
+          <p class="pm-voice__quote">&ldquo;We sell what Rogers builds &mdash; sized for businesses Rogers doesn&rsquo;t reach directly.&rdquo;</p>
+        </div>
+        <div class="pm-voice__card pm-voice__no" style="background:white;">
+          <span class="pm-voice__tag">Not this</span>
+          <p class="pm-voice__quote">&ldquo;PartnerMax is your trusted partner in the journey to digital transformation.&rdquo;</p>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Words we use · words we don&rsquo;t</h3>
+      <div class="pm-grid pm-grid--2" style="gap:var(--pm-space-5);">
+        <div class="pm-card" style="background:white;">
+          <span class="pm-tag pm-tag--dot" style="color:var(--pm-success-600);">Use</span>
+          <ul style="font-family:var(--pm-font-editorial); font-size:16px; line-height:2; margin:var(--pm-space-3) 0 0; padding:0; list-style:none; color:var(--pm-text);">
+            <li>Partner · Channel · License · Quote</li>
+            <li>Provision · Activate · Renew · Pool</li>
+            <li>Business · Operator · Fleet · Site</li>
+            <li>Direct · Honest · Specific · Engineered</li>
+          </ul>
+        </div>
+        <div class="pm-card" style="background:white;">
+          <span class="pm-tag pm-tag--dot" style="color:var(--pm-red-700);">Avoid</span>
+          <ul style="font-family:var(--pm-font-editorial); font-size:16px; line-height:2; margin:var(--pm-space-3) 0 0; padding:0; list-style:none; color:var(--pm-text-muted); text-decoration:line-through; text-decoration-color:var(--pm-red-300);">
+            <li>Synergy · Seamless · Best-in-class</li>
+            <li>Unlock · Empower · Supercharge</li>
+            <li>Solution (when product will do)</li>
+            <li>Journey · Transform · Disrupt</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 09 APPLICATIONS ============ -->
+    <section id="applications" class="pm-section" data-screen-label="10 Applications">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">09</span><span>Applications · in the wild</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 010</span>
+      </div>
+      <h2 class="pm-section__title">The system,<br/>applied.</h2>
+      <p class="pm-section__lede">
+        Four reference applications that show how the tokens compose into real surfaces:
+        the website hero, a sales deck slide, a business card, and a transactional email.
+      </p>
+
+      <h3 class="pm-subhead">Website hero</h3>
+      <div class="pm-app-frame">
+        <div class="pm-app-frame__label">
+          <span>partnermax.ca</span>
+          <span class="pm-mono" style="font-size:10px;">DESKTOP · 1440 PX</span>
+        </div>
+        <div class="pm-web-hero">
+          <div class="pm-web-hero__nav">
+            <img src="assets/partnermax-logo-sm.svg" alt="PartnerMax" />
+            <div class="pm-web-hero__nav-links">
+              <a href="#" style="color:white; text-decoration:none;">Solutions</a>
+              <a href="#" style="text-decoration:none; color:inherit;">Partners</a>
+              <a href="#" style="text-decoration:none; color:inherit;">Pricing</a>
+              <a href="#" style="text-decoration:none; color:inherit;">Insights</a>
+            </div>
+            <div style="display:flex; gap:12px; align-items:center;">
+              <a href="#" style="font-family:var(--pm-font-display); font-size:14px; color:rgba(255,255,255,.8); text-decoration:none;">Sign in</a>
+              <button class="pm-btn pm-btn--primary">Become a partner</button>
+            </div>
+          </div>
+          <div class="pm-web-hero__body">
+            <div>
+              <div class="pm-web-hero__eyebrow">Channel partnership · Rogers-licensed</div>
+              <h1 class="pm-web-hero__h">Sell Rogers products<br/>like <em>you own</em><br/>the channel.</h1>
+              <p class="pm-web-hero__p">
+                PartnerMax is the licensed channel for Rogers business products in Canada.
+                We provision the network, manage the billing and back you with a real
+                operations team &mdash; so you can sell wireless, fibre and managed services
+                under your own name.
+              </p>
+              <div class="pm-web-hero__cta">
+                <button class="pm-btn pm-btn--primary pm-btn--lg">
+                  <span>Apply to partner</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+                <button class="pm-btn pm-btn--lg" style="background:transparent; color:white; border:1px solid rgba(255,255,255,.2);">Read the playbook</button>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:var(--pm-space-5); padding-left:var(--pm-space-7); border-left:1px solid rgba(255,255,255,.08);">
+              <div>
+                <div style="font-family:var(--pm-font-display); font-weight:700; font-size:56px; color:white; letter-spacing:-0.03em; line-height:1;">2,400<span style="font-family:var(--pm-font-editorial); font-style:italic; color:var(--pm-red-500);">+</span></div>
+                <div style="font-family:var(--pm-font-editorial); font-size:14px; color:var(--pm-ink-300); line-height:1.4; margin-top:6px;">Canadian businesses<br/>served through our channel</div>
+              </div>
+              <div>
+                <div style="font-family:var(--pm-font-display); font-weight:700; font-size:56px; color:white; letter-spacing:-0.03em; line-height:1;">99.<span style="font-family:var(--pm-font-editorial); font-style:italic; color:var(--pm-red-500);">97</span>%</div>
+                <div style="font-family:var(--pm-font-editorial); font-size:14px; color:var(--pm-ink-300); line-height:1.4; margin-top:6px;">Managed-circuit uptime<br/>across 12 months</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Sales slide</h3>
+      <div class="pm-app-frame">
+        <div class="pm-app-frame__label">
+          <span>Q3 Capability Deck · Slide 4</span>
+          <span class="pm-mono" style="font-size:10px;">1920 × 1080</span>
+        </div>
+        <div class="pm-slide">
+          <div class="pm-slide__top">
+            <img src="assets/partnermax-logo-sm.svg" alt="" />
+            <span>Q3 2026 · Capability Briefing</span>
+          </div>
+          <div class="pm-slide__middle">
+            <span class="pm-slide__eyebrow">02 · Why PartnerMax</span>
+            <h2 class="pm-slide__title">One licensed channel.<br/><em>One</em> renewal cycle.<br/>Every Rogers product.</h2>
+            <p class="pm-slide__sub">We provision and bill on your behalf so your team sells outcomes — not contracts. Our operations carry the complexity Rogers won&rsquo;t.</p>
+          </div>
+          <div class="pm-slide__bottom">
+            <span>partnermax.ca</span>
+            <span>04 / 24</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Business card</h3>
+      <div class="pm-card-stack">
+        <div class="pm-bc pm-bc--front">
+          <div class="pm-bc__top">
+            <img src="assets/partnermax-logo-sm.svg" alt="" />
+            <span style="font-family:var(--pm-font-display); font-size:10px; color:rgba(255,255,255,.5); letter-spacing:0.12em; text-transform:uppercase;">CHANNEL · CA</span>
+          </div>
+          <div style="position:relative;">
+            <h3 class="pm-bc__name">Olivia Sandoval</h3>
+            <p class="pm-bc__role">Director · Partner Operations</p>
+          </div>
+          <div class="pm-bc__contact">
+            olivia@partnermax.ca · +1 416 555 0114
+          </div>
+        </div>
+
+        <div class="pm-bc pm-bc--back">
+          <div class="pm-bc__top">
+            <span style="font-family:var(--pm-font-display); font-size:10px; color:var(--pm-ink-500); letter-spacing:0.12em; text-transform:uppercase;">PartnerMax · Toronto</span>
+          </div>
+          <div class="pm-bc__big">Max<em>+</em></div>
+          <div class="pm-bc__contact">
+            255 Front Street W, Toronto ON · partnermax.ca
+          </div>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">Transactional email</h3>
+      <div class="pm-app-frame" style="max-width:680px;">
+        <div class="pm-app-frame__label">
+          <span>onboarding@partnermax.ca</span>
+          <span class="pm-mono" style="font-size:10px;">EMAIL · 600 PX</span>
+        </div>
+        <div class="pm-email">
+          <div class="pm-email__top">
+            <img src="assets/partnermax-logo-light.svg" alt="" />
+            <span style="font-family:var(--pm-font-display); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--pm-text-subtle);">Application #PM-24-1014</span>
+          </div>
+          <div class="pm-email__hero">
+            <span style="font-family:var(--pm-font-display); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--pm-red-700);">Application approved</span>
+            <h1 class="pm-email__h">Welcome to the channel, <em>Northbridge</em>.</h1>
+            <p class="pm-email__p">
+              Your partnership is live. Your dedicated channel manager, Olivia Sandoval, will reach out within 1 business day to schedule onboarding and run through your first quote.
+            </p>
+            <p class="pm-email__p">
+              In the meantime, your partner console is provisioned and ready &mdash; configure your team, set up reseller tax codes, and start drafting quotes.
+            </p>
+            <a href="#" class="pm-email__cta">Open partner console →</a>
+          </div>
+          <div class="pm-email__footer">
+            PartnerMax Inc. · 255 Front Street W, Toronto ON · partnermax.ca<br/>
+            You&rsquo;re receiving this because you submitted an application. Manage notification preferences in your console.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10 TOKENS for code ============ -->
+    <section id="tokens" class="pm-section pm-section--dark" data-screen-label="11 Tokens">
+      <div class="pm-section__eyebrow">
+        <span class="pm-section__num">10</span><span>Tokens · for Claude Code &amp; Claude Design</span>
+        <span class="pm-section__rule"></span>
+        <span>p. 011</span>
+      </div>
+      <h2 class="pm-section__title">Drop these into your project.</h2>
+      <p class="pm-section__lede">
+        Every visual decision in this system is defined as a CSS custom property in
+        <code class="pm-mono" style="color:var(--pm-red-400); background:rgba(255,255,255,.06); padding:2px 6px; border-radius:3px;">tokens.css</code>.
+        Import it once and reference variables &mdash; never hardcode.
+      </p>
+
+      <div class="pm-grid pm-grid--2" style="gap:var(--pm-space-5);">
+        <div>
+          <h3 class="pm-subhead" style="margin-top:0;">1 · Import</h3>
+          <pre class="pm-code"><span class="c">/* In your root stylesheet */</span>
+<span class="k">@import</span> <span class="v">"./tokens.css"</span>;
+
+<span class="c">/* Or via &lt;link&gt; */</span>
+&lt;link rel=<span class="v">"stylesheet"</span> href=<span class="v">"tokens.css"</span> /&gt;</pre>
+        </div>
+        <div>
+          <h3 class="pm-subhead" style="margin-top:0;">2 · Use the variables</h3>
+          <pre class="pm-code"><span class="k">.hero</span> {
+  <span class="k">background</span>: <span class="v">var(--pm-ink-900)</span>;
+  <span class="k">color</span>: <span class="v">var(--pm-ink-0)</span>;
+  <span class="k">padding</span>: <span class="v">var(--pm-space-9)</span>;
+  <span class="k">font-family</span>: <span class="v">var(--pm-font-display)</span>;
+}
+<span class="k">.cta</span> {
+  <span class="k">background</span>: <span class="v">var(--pm-red-600)</span>;
+  <span class="k">border-radius</span>: <span class="v">var(--pm-radius-sm)</span>;
+}</pre>
+        </div>
+      </div>
+
+      <h3 class="pm-subhead">3 · Switch themes per surface</h3>
+      <pre class="pm-code"><span class="c">// Anywhere in the DOM tree</span>
+&lt;div data-theme=<span class="v">"dark"</span>&gt;  <span class="c">// premium / hero / deck</span>
+&lt;div data-theme=<span class="v">"ivory"</span>&gt; <span class="c">// editorial / long-form</span>
+&lt;div&gt;                  <span class="c">// default: light surface</span></pre>
+
+      <h3 class="pm-subhead">4 · Brand prompt for Claude</h3>
+      <p class="pm-note" style="color:var(--pm-ink-300);">
+        Drop the following at the top of a Claude Design or Claude Code session to ground every output in the system.
+      </p>
+      <pre class="pm-code">Brand: PartnerMax
+B2B channel partnership · Rogers-licensed · Canada
+Voice: authoritative, engineered, plainspoken. No marketing
+  fluff. Specific numbers and outcomes.
+
+Visual system (use tokens.css):
+  Color · Brand red #DD0000 (--pm-red-600), Maximum Dark
+    #0C0D0D (--pm-ink-900), Steel Grey #667684 (--pm-ink-500)
+  Type  · Display: Bai Jamjuree Bold (tight -0.03em)
+          Editorial: Bai Jamjuree Italic (Light Italic is the accent)
+          UI: Inter
+  Radii · 4px buttons / 10px cards / 16px hero blocks
+  Surface · default light, dark for hero / marketing
+  Signature · italic Bai Jamjuree Italic phrase inside a bold IS
+    headline, one per surface, red 500/600
+
+Components: .pm-btn (primary/secondary/outline/ghost/link),
+.pm-input, .pm-card, .pm-badge, .pm-product-card, .pm-stat.
+Always one primary CTA per surface.</pre>
+
+      <h3 class="pm-subhead">5 · Asset paths</h3>
+      <pre class="pm-code">assets/partnermax-logo.svg            <span class="c">// primary, dark BG (PARTNER white + MAX red)</span>
+assets/partnermax-logo-light.svg      <span class="c">// primary, light BG (PARTNER dark + MAX red)</span>
+assets/partnermax-logo-sm.svg         <span class="c">// monochrome white, all surfaces dark</span>
+assets/partnermax-logo-mono-dark.svg  <span class="c">// monochrome dark, editorial / press</span>
+assets/partnermax-logo-red.svg        <span class="c">// single-color red, light surfaces</span></pre>
+
+      <div class="pm-mt-7" style="display:flex; justify-content:space-between; align-items:flex-end; padding-top:var(--pm-space-7); border-top:1px solid rgba(255,255,255,.12);">
+        <div>
+          <span style="font-family:var(--pm-font-display); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,.5);">End of document</span>
+          <p style="font-family:var(--pm-font-editorial); font-size:16px; color:var(--pm-ink-300); margin:8px 0 0; max-width:48ch; line-height:1.55;">
+            PartnerMax Design System · Volume One · May 2026. Maintained by the brand team. Questions, additions and proposals to <span style="color:white;">brand@partnermax.ca</span>.
+          </p>
+        </div>
+        <span style="font-family:var(--pm-font-display); font-weight:700; font-size:48px; color:white; letter-spacing:-0.03em; line-height:1;">Max<em style="font-family:var(--pm-font-editorial); font-style:italic; color:var(--pm-red-500);">+</em></span>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="ds-icons.js"></script>
+</body>
+</html>
