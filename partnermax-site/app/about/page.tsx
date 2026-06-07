@@ -77,6 +77,7 @@ const TEAM: TeamMember[] = [
     role: "Managing Partner · Network & Provisioning",
     name: "Brian Ochab",
     initials: "BO",
+    photo: "/assets/brian-ochab.jpg",
     bio: "Brian runs operations — the side of PartnerMax that turns a signed quote into working service. His background is in carrier network design and managed services, and he has overseen a long list of Canadian fibre builds.",
     meta: [
       { label: "Based", value: "Toronto, ON" },
@@ -84,17 +85,6 @@ const TEAM: TeamMember[] = [
       { label: "LinkedIn", value: "/in/brianochab" },
     ],
   },
-];
-
-/* Real team names (user-provided). Roles are intentionally shown as
-   "Placeholder" until the real titles are confirmed (tracked in
-   PRE-LAUNCH.md). */
-const STAFF: { name: string; role: string; initials: string }[] = [
-  { name: "Melanie Tessier", role: "Placeholder", initials: "MT" },
-  { name: "Dan Charbonneau", role: "Placeholder", initials: "DC" },
-  { name: "Ryan Jemielity", role: "Placeholder", initials: "RJ" },
-  { name: "Cole Mayke", role: "Placeholder", initials: "CM" },
-  { name: "Cristian Vegara", role: "Placeholder", initials: "CV" },
 ];
 
 export default function AboutPage() {
@@ -339,30 +329,6 @@ export default function AboutPage() {
             {TEAM.map((m, i) => (
               <TeamCard key={m.name} member={m} delay={i} />
             ))}
-          </div>
-
-          <div className="site-team-more fade-up">
-            <div className="site-team-more__head">
-              <span className="site-team-more__label">The team</span>
-              <p className="site-team-more__note">
-                Channel managers, provisioning leads and operations. Every
-                customer is assigned named contacts from this group.
-              </p>
-            </div>
-            <div className="site-team-more__grid">
-              {STAFF.map((p) => (
-                <div className="site-team-mini" key={p.name}>
-                  <div className="site-team-mini__avatar" aria-hidden="true">
-                    {p.initials[0]}
-                    <em>{p.initials.slice(1)}</em>
-                  </div>
-                  <div>
-                    <h4 className="site-team-mini__name">{p.name}</h4>
-                    <span className="site-team-mini__role">{p.role}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
 
           <div
