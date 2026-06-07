@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-/* Shared footer — identical on every page. Server component (static).
+/* Shared footer, identical on every page. Server component (static).
    The prototype's "homepage.html#x" links become Next "/#x" routes;
    the placeholder partner links keep href="#" and are tracked in
    PRE-LAUNCH.md. */
@@ -13,7 +13,7 @@ export default function SiteFooter() {
           <img src="/assets/partnermax-logo-sm.svg" alt="PartnerMax" />
           <p>
             The licensed channel for Rogers business products in Canada.
-            Wireless, fibre, plans and bundles &mdash; provisioned and billed
+            Wireless, fibre, plans and bundles, provisioned and billed
             under one roof.
           </p>
         </div>

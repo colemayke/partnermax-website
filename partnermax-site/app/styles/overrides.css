@@ -1,16 +1,16 @@
 /* ============================================================
-   PartnerMax — intentional post-handoff overrides
+   PartnerMax, intentional post-handoff overrides
    Deliberate deviations from the lifted prototype CSS, requested
    after a design review. Kept in a separate file (imported last)
    so site.css stays a clean verbatim lift of the handoff.
    ============================================================ */
 
 /* ============================================================
-   HERO — full redo (the handoff layout was flawed for this page)
+   HERO, full redo (the handoff layout was flawed for this page)
 
    Problems fixed:
    1. `.site-hero__body` was a 1.6fr / 1fr grid with an 80px gap, but
-      the homepage hero only has ONE content column — text was crammed
+      the homepage hero only has ONE content column, text was crammed
       into ~60% width with dead space + a useless gap. Now a single
       constrained editorial column.
    2. `clamp(56px, 8vw, 128px)` overflowed the column on wide screens
@@ -31,12 +31,12 @@
   align-items: flex-start;
 }
 
-/* Eyebrow — clear but connected to the headline. */
+/* Eyebrow, clear but connected to the headline. */
 .site-hero__eyebrow {
   margin-bottom: 28px;
 }
 
-/* Headline — re-scaled so the longest line fits the column, with a
+/* Headline, re-scaled so the longest line fits the column, with a
    slightly looser line-height so the two lines + italic accent breathe.
    Reveal wrapper padding trimmed so it doesn't inflate the rhythm. */
 .site-hero__h {
@@ -47,7 +47,7 @@
 }
 .site-hero__h .reveal-text__line { padding: 0.02em 0; }
 
-/* Supporting paragraph ("caption") — readable measure, even gap to the
+/* Supporting paragraph ("caption"), readable measure, even gap to the
    headline above and the CTAs below. */
 .site-hero__p {
   font-size: 19px;
@@ -56,10 +56,10 @@
   max-width: 54ch;
 }
 
-/* CTAs — clear separation between the two buttons. */
+/* CTAs, clear separation between the two buttons. */
 .site-hero__cta { gap: 16px; }
 
-/* Scroll cue — was rendering too large. */
+/* Scroll cue, was rendering too large. */
 .site-hero__scroll { font-size: 10px; letter-spacing: 0.14em; }
 .site-hero__scroll::after { width: 48px; }
 
@@ -85,7 +85,7 @@
 }
 
 /* ============================================================
-   ABOUT — wider team grid (added by request)
+   ABOUT, wider team grid (added by request)
 
    Two managing partners stay as the large .site-team cards; this is
    the secondary tier of employees beneath them. New element, not in
@@ -185,7 +185,7 @@
 }
 
 /* ============================================================
-   PAGE HEROES — per-page treatments (added by request)
+   PAGE HEROES, per-page treatments (added by request)
 
    About + Process previously shared one hero (full-bleed image,
    2-column bottom-aligned text). Split into two distinct treatments;

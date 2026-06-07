@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 /* Dark CTA banner with the pulsing red glow (animation in CSS). Shared
-   by all three pages. `children` is the actions column — the embedded
+   by all three pages. `children` is the actions column, the embedded
    contact form on the homepage, or buttons on About / Process. */
 export default function CtaBanner({
   id,

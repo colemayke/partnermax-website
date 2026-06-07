@@ -1,5 +1,5 @@
 /* ============================================================
-   PartnerMax — Site animations
+   PartnerMax, Site animations
    Scroll reveals, marquees, parallax, magnetic CTAs.
    ============================================================ */
 
@@ -343,7 +343,7 @@
 }
 
 /* ===== Image break parallax & subtle zoom-out reveal ===== */
-/* Reveal handled via JS parallax — keep initial transform clean */
+/* Reveal handled via JS parallax, keep initial transform clean */
 
 /* ===== Cursor follower (subtle) ===== */
 .cursor-follower {

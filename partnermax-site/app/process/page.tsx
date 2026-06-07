@@ -36,8 +36,8 @@ const STEPS: ProcessStepData[] = [
     desc: (
       <>
         One form, an email, or a phone call. We just need to know the service
-        shape &mdash; wireless lines, fibre circuits, voice services, or all of
-        it &mdash; and the rough scale.
+        shape (wireless lines, fibre circuits, voice services, or all of
+        it) and the rough scale.
       </>
     ),
     bullets: [
@@ -50,7 +50,7 @@ const STEPS: ProcessStepData[] = [
       </>,
       "Tell us service type, fleet or site size, and provinces of operation.",
       "If you have existing Rogers accounts, send the account numbers.",
-      "Reseller? Tell us — that path has a separate qualification.",
+      "Reseller? Tell us. That path has a separate qualification.",
     ],
     side: [
       {
@@ -94,7 +94,7 @@ const STEPS: ProcessStepData[] = [
       </>
     ),
     bullets: [
-      "Video or in-person at our Front Street office — your call.",
+      "Video or in-person at our Front Street office, your call.",
       "We map your service needs onto the Rogers product set.",
       "We flag anything Rogers can’t cover (so you can plan around it).",
       "We agree on the shape of the quote before we go build it.",
@@ -142,7 +142,7 @@ const STEPS: ProcessStepData[] = [
     desc: (
       <>
         One PDF. Every line item visible. The price you sign at is the price on
-        the first invoice &mdash; we don&rsquo;t add provisioning fees, channel
+        the first invoice. We don&rsquo;t add provisioning fees, channel
         surcharges, or activation costs after the fact.
       </>
     ),
@@ -169,7 +169,7 @@ const STEPS: ProcessStepData[] = [
             <em>30</em> days
           </>
         ),
-        desc: "The quote holds for a calendar month. Hardware availability can shift it earlier — we’ll flag if it does.",
+        desc: "The quote holds for a calendar month. Hardware availability can shift it earlier. We’ll flag if it does.",
       },
       {
         label: "Revisions",
@@ -249,7 +249,7 @@ const STEPS: ProcessStepData[] = [
     ),
     desc: (
       <>
-        Wireless, fibre, voice, hardware financing &mdash; consolidated.
+        Wireless, fibre, voice, hardware financing, consolidated.
         Itemized by line and site. Net-30 terms. Edit anytime through your
         channel manager or your partner console.
       </>
@@ -257,7 +257,7 @@ const STEPS: ProcessStepData[] = [
     bullets: [
       "One PDF invoice per month, plus machine-readable CSV.",
       "Line-level detail, with monthly cost and usage variance.",
-      "Renewal notices 90 days out — no surprise rollovers.",
+      "Renewal notices 90 days out, no surprise rollovers.",
       "Account changes processed inside one business day.",
     ],
     side: [
@@ -290,7 +290,7 @@ const PROCESS_FAQ: FaqItem[] = [
     defaultOpen: true,
     a: (
       <>
-        Yes &mdash; wireless-only deals can compress to 7&ndash;10 days end to
+        Yes. Wireless-only deals can compress to 7&ndash;10 days end to
         end if you can sign the quote within 48 hours. Fibre installations are
         gated by Rogers&rsquo; field scheduling; we&rsquo;ll move it as fast as
         the carrier allows but can&rsquo;t go below 10 days.
@@ -303,8 +303,8 @@ const PROCESS_FAQ: FaqItem[] = [
       <>
         We&rsquo;ll quote you for the date your existing contract ends and hold
         the price until then. Most partnerships start as a future-dated quote
-        signed now, with the cutover scheduled for the month after expiry
-        &mdash; so your transition is sequenced, not stacked.
+        signed now, with the cutover scheduled for the month after expiry,
+        so your transition is sequenced, not stacked.
       </>
     ),
   },
@@ -312,7 +312,7 @@ const PROCESS_FAQ: FaqItem[] = [
     q: "Do you handle multi-province rollouts?",
     a: (
       <>
-        Yes &mdash; we cover every province where Rogers operates commercially.
+        Yes. We cover every province where Rogers operates commercially.
         Multi-province rollouts add 1&ndash;2 weeks for sequenced provisioning,
         but the SLAs and the invoice stay unified. You don&rsquo;t talk to a
         different team for the BC sites versus the Ontario sites.
@@ -335,7 +335,7 @@ const PROCESS_FAQ: FaqItem[] = [
     q: "Can we change scope after activation?",
     a: (
       <>
-        Add lines anytime &mdash; processed inside one business day. Remove
+        Add lines anytime, processed inside one business day. Remove
         lines on the next billing cycle. Add new services (e.g. fibre after
         wireless) at any point during the term; we&rsquo;ll re-quote the
         addition without re-papering the original contract.
@@ -361,7 +361,7 @@ export default function ProcessPage() {
         text={
           <>
             From the first inquiry to a billed, provisioned Rogers business
-            product. A standard partnership clears in 14&ndash;21 days &mdash;
+            product. A standard partnership clears in 14&ndash;21 days,
             the same shape, every time. No surprises.
           </>
         }
@@ -383,8 +383,8 @@ export default function ProcessPage() {
             lede={
               <>
                 The full path, with realistic timing on each stage. Complex
-                multi-site fibre rollouts can extend to 60 days &mdash;
-                we&rsquo;ll tell you up front if your scope is one of them.
+                multi-site fibre rollouts can extend to 60 days. We&rsquo;ll
+                tell you up front if your scope is one of them.
               </>
             }
           />
@@ -419,7 +419,7 @@ export default function ProcessPage() {
             }
             lede={
               <>
-                Questions specifically about how PartnerMax operates &mdash; not
+                Questions specifically about how PartnerMax operates, not
                 what we sell.
               </>
             }
@@ -440,7 +440,7 @@ export default function ProcessPage() {
         text={
           <>
             Submit the form, send us an email, or pick up the phone. A named
-            channel manager replies before close of business &mdash; same day,
+            channel manager replies before close of business, same day,
             every day.
           </>
         }

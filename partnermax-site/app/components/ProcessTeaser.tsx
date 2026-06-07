@@ -5,7 +5,7 @@ const STEPS = [
   {
     num: "Step 01",
     title: "Inquire",
-    desc: "Reach out with what you need — service type, fleet size, geography.",
+    desc: "Reach out with what you need: service type, fleet size, geography.",
   },
   {
     num: "Step 02",

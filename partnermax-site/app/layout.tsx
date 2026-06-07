@@ -5,7 +5,7 @@ import SiteNav from "./components/SiteNav";
 import SiteFooter from "./components/SiteFooter";
 import SiteEffects from "./components/SiteEffects";
 
-/* Display / editorial — Bai Jamjuree. Not a variable face on Google Fonts,
+/* Display / editorial, Bai Jamjuree. Not a variable face on Google Fonts,
    so the weights the design actually uses are requested explicitly, both
    styles (the italic accent is Bai Jamjuree Italic). */
 const baiJamjuree = Bai_Jamjuree({
@@ -16,14 +16,14 @@ const baiJamjuree = Bai_Jamjuree({
   display: "swap",
 });
 
-/* Body / UI — Manrope (variable). */
+/* Body / UI, Manrope (variable). */
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
   display: "swap",
 });
 
-/* Mono — JetBrains Mono (variable), used for ticker pills + rule labels. */
+/* Mono, JetBrains Mono (variable), used for ticker pills + rule labels. */
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains-mono",
@@ -34,19 +34,19 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://partnermax.ca"),
   title: {
     default:
-      "PartnerMax — The licensed channel for Rogers business products in Canada",
-    template: "%s — PartnerMax",
+      "PartnerMax: The licensed channel for Rogers business products in Canada",
+    template: "%s | PartnerMax",
   },
   description:
-    "PartnerMax is the licensed channel partner for Rogers business products in Canada. Wireless, fibre, plans and bundles — provisioned and billed under one roof.",
+    "PartnerMax is the licensed channel partner for Rogers business products in Canada. Wireless, fibre, plans and bundles, provisioned and billed under one roof.",
   openGraph: {
     type: "website",
     siteName: "PartnerMax",
     locale: "en_CA",
     title:
-      "PartnerMax — The licensed channel for Rogers business products in Canada",
+      "PartnerMax: The licensed channel for Rogers business products in Canada",
     description:
-      "Wireless, fibre, plans and bundles for Canadian business — provisioned and billed under one roof.",
+      "Wireless, fibre, plans and bundles for Canadian business, provisioned and billed under one roof.",
   },
   twitter: { card: "summary_large_image" },
 };

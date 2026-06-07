@@ -16,12 +16,12 @@ export type FaqItem = {
 };
 
 /* Accordion. Single-open (opening one closes the others), one open by
-   default — matches site.js.
+   default, matches site.js.
 
    Reveal is owned here, not by SiteEffects' global .fade-up observer.
    This component re-renders on every open/close, and if an external
    script had imperatively added `is-visible` to a .fade-up node, React
-   would overwrite className on the next render and strip it — making
+   would overwrite className on the next render and strip it, making
    the item collapse back to opacity:0 (the "items disappear when I
    click them" bug). Keeping `fade-up`/`is-visible` fully React-driven
    makes className the single source of truth. `prefers-reduced-motion`

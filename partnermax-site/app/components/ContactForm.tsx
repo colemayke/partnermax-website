@@ -87,7 +87,7 @@ export default function ContactForm({
         );
       }
       setStatus("success");
-      setMessage("Thanks — we'll be in touch within one business day.");
+      setMessage("Thanks, we'll be in touch within one business day.");
       form.reset();
       window.setTimeout(() => {
         setStatus("idle");

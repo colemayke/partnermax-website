@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 /* Shorter hero for the About / Process / Contact pages
-   (.site-page-hero). Same markup for every treatment — the variant
+   (.site-page-hero). Same markup for every treatment, the variant
    only swaps a modifier class so the CSS (overrides.css) does the work:
 
    - default (no `variant`): the original handoff layout, optional
@@ -10,7 +10,7 @@ import type { ReactNode } from "react";
      at the top of an otherwise light page).
    - `variant="cinematic"` (About): full-bleed darkened image, a
      single centered editorial column, taller band.
-   - `variant="minimal"` (Process): full-bleed but airy — a lighter
+   - `variant="minimal"` (Process): full-bleed but airy, a lighter
      scrim so the golden-hour sky reads, compact left-aligned text,
      the red glow dialled right back.
 

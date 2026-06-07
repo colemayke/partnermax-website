@@ -1,5 +1,5 @@
 /* ============================================================
-   PartnerMax — global stylesheet entry
+   PartnerMax, global stylesheet entry
    Order matters: tokens define the custom properties everything
    else references; base resets + primitives; then the site
    layout/components; then the animation layer last so its

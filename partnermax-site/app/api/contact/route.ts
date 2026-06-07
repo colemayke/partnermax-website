@@ -53,7 +53,7 @@ function validate(body: unknown): { data?: Payload; error?: string } {
   if (!need || !ALLOWED_NEEDS.has(need))
     return { error: "Choose what you’re interested in." };
   if (note.length > 2000)
-    return { error: "That note is a little long — trim it under 2000 characters." };
+    return { error: "That note is a little long. Trim it under 2000 characters." };
 
   return { data: { name, business, email, need, note } };
 }
@@ -85,7 +85,7 @@ export async function POST(request: Request) {
   if (!apiKey) {
     // Surface a useful message; the lead is not lost silently.
     console.error(
-      "[contact] RESEND_API_KEY is not set — cannot deliver lead:",
+      "[contact] RESEND_API_KEY is not set, cannot deliver lead:",
       { ...data, note: data.note ? "(provided)" : "(empty)" }
     );
     return Response.json(
@@ -108,7 +108,7 @@ export async function POST(request: Request) {
       from,
       to,
       replyTo: data.email,
-      subject: `New partner inquiry — ${data.business}`,
+      subject: `New partner inquiry: ${data.business}`,
       text: [
         `Name: ${data.name}`,
         `Business: ${data.business}`,

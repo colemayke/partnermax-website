@@ -38,7 +38,7 @@ const WHY_CELLS = [
     desc: (
       <>
         Wireless, fibre and voice are quoted, provisioned and invoiced from one
-        PartnerMax account &mdash; not split across separate vendor
+        PartnerMax account, not split across separate vendor
         relationships.
       </>
     ),
@@ -66,8 +66,8 @@ const FAQ_ITEMS = [
     a: (
       <>
         No. PartnerMax is an independent Canadian company. We hold a commercial
-        channel license to provision and sell Rogers business products &mdash;
-        we are not a Rogers subsidiary, and Rogers does not own equity in
+        channel license to provision and sell Rogers business products. We
+        are not a Rogers subsidiary, and Rogers does not own equity in
         PartnerMax. We sit between Rogers and the businesses Rogers doesn&rsquo;t
         serve directly.
       </>
@@ -80,8 +80,8 @@ const FAQ_ITEMS = [
         Two audiences. One: Canadian businesses with 10&ndash;5,000 employees
         that need wireless, fibre or voice but want a single channel partner
         instead of a Rogers enterprise account. Two: technology consultancies
-        and MSPs who want to resell Rogers products under their own roof &mdash;
-        we provide the license, you keep the customer relationship.
+        and MSPs who want to resell Rogers products under their own roof. We
+        provide the license, you keep the customer relationship.
       </>
     ),
   },
@@ -89,7 +89,7 @@ const FAQ_ITEMS = [
     q: "Can we keep our existing Rogers account?",
     a: (
       <>
-        Yes &mdash; we&rsquo;ll port it. Existing Rogers business accounts can
+        Yes. We&rsquo;ll port it. Existing Rogers business accounts can
         be transitioned to PartnerMax billing without service interruption. The
         handover is coordinated by our provisioning team and typically completes
         in 30 days.
@@ -101,7 +101,7 @@ const FAQ_ITEMS = [
     a: (
       <>
         One invoice per month, itemized by location, line and service. Wireless
-        lines, fibre circuits, voice services, hardware financing &mdash; all
+        lines, fibre circuits, voice services, hardware financing, all
         consolidated. You see every charge; you don&rsquo;t see four separate
         Rogers vendor invoices.
       </>
@@ -160,7 +160,7 @@ export default function Home() {
             lede={
               <>
                 Rogers&rsquo; full business portfolio, delivered through one
-                licensed partner &mdash; a single contract, a single bill, a
+                licensed partner: a single contract, a single bill, a
                 single renewal cycle.
               </>
             }

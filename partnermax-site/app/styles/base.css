@@ -1,5 +1,5 @@
 /* ============================================================
-   PartnerMax — Base reset + shared component primitives
+   PartnerMax, Base reset + shared component primitives
    Reset + .pm-* primitives extracted from design-system.css
    (only the parts the marketing site actually consumes).
    ============================================================ */
@@ -27,7 +27,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Skip-to-content link (accessibility — not in the prototype) */
+/* Skip-to-content link (accessibility, not in the prototype) */
 .skip-link {
   position: absolute;
   left: -9999px;

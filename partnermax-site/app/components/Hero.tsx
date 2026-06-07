@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "./icons";
 
-/* Homepage hero — full viewport, Vancouver skyline behind a dark + red
+/* Homepage hero, full viewport, Vancouver skyline behind a dark + red
    overlay. The bg stays a CSS-background div (not next/image) so the
    documented parallax (SiteEffects translates .site-hero__bg) and the
    ::before / ::after overlay gradients keep working exactly as designed. */
@@ -25,7 +25,7 @@ export default function Hero() {
           <p className="site-hero__p" data-reveal-text>
             PartnerMax is the licensed channel for Rogers business products in
             Canada. We hold the licensing, run the provisioning and own the
-            billing &mdash; so you buy wireless, fibre, plans and bundles
+            billing, so you buy wireless, fibre, plans and bundles
             through one partner.
           </p>
           <div className="site-hero__cta">

@@ -18,7 +18,7 @@ const PRODUCTS: Product[] = [
   {
     num: "Wireless",
     title: "Rogers Business Wireless",
-    desc: "Pooled data, voice, SMS and signal-priority plans across your fleet — activated under one account and billed on one invoice.",
+    desc: "Pooled data, voice, SMS and signal-priority plans across your fleet, activated under one account and billed on one invoice.",
     icon: <WirelessIcon />,
   },
   {
@@ -41,7 +41,7 @@ const PRODUCTS: Product[] = [
   {
     num: "Bundle",
     title: "Enterprise Connect",
-    desc: "Wireless, fibre, voice and managed security — priced, provisioned and billed as one.",
+    desc: "Wireless, fibre, voice and managed security, priced, provisioned and billed as one.",
     icon: <BundleIcon />,
     featured: true,
   },

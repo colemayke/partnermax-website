@@ -21,7 +21,7 @@ export default function ContactPage() {
         text={
           <>
             Tell us about your business or your customers. A named channel
-            manager replies within one business day &mdash; a scoped proposal,
+            manager replies within one business day, with a scoped proposal
             or just a straight answer.
           </>
         }

@@ -35,7 +35,7 @@ export default function TeamCard({
         {member.photo ? (
           <Image
             src={member.photo}
-            alt={`${member.name} — ${member.role}`}
+            alt={`${member.name}, ${member.role}`}
             fill
             sizes="(max-width: 1100px) 100vw, 50vw"
             style={{ objectFit: "cover" }}

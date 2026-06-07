@@ -1,4 +1,4 @@
-/* Operations status ticker — a continuous marquee. SiteEffects clones
+/* Operations status ticker, a continuous marquee. SiteEffects clones
    the track children once at init for a seamless loop (same mechanism
    as the logo marquee). aria-hidden: this is decorative chrome. */
 const TICKER_ITEMS = [

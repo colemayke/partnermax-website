@@ -5,7 +5,7 @@ import { ImageResponse } from "next/og";
    (tracked in PRE-LAUNCH.md). */
 
 export const alt =
-  "PartnerMax — the licensed channel for Rogers business products in Canada";
+  "PartnerMax: the licensed channel for Rogers business products in Canada";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

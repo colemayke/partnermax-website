@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-/* Animation runtime — ported from the handoff's animations.js plus the
+/* Animation runtime, ported from the handoff's animations.js plus the
    fade-up observer from site.js. Excluded by design: the Tweaks panel
    (prototype-only), the contact form (now ContactForm.tsx), the FAQ
    accordion (now Faq.tsx), the nav scrolled-state (now SiteNav.tsx) and
@@ -86,7 +86,7 @@ export default function SiteEffects() {
       );
     }
 
-    // ---------- 2. Marquee — clone children for seamless loop ----------
+    // ---------- 2. Marquee, clone children for seamless loop ----------
     function setupMarquee() {
       document
         .querySelectorAll<HTMLElement>(
@@ -199,7 +199,7 @@ export default function SiteEffects() {
       });
     }
 
-    // ---------- 6. Cursor follower — removed by request ----------
+    // ---------- 6. Cursor follower, removed by request ----------
     // The prototype's mouse-tracking red ring (.cursor-follower) was
     // intentionally dropped. No setup function; nothing is created.
 

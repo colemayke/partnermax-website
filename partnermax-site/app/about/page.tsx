@@ -150,14 +150,14 @@ export default function AboutPage() {
                 the operations that turn a quote into working service, and
                 stands behind a single monthly invoice. Our customers are
                 regional logistics firms, multi-site manufacturers, healthcare
-                networks and Crown corporations &mdash; organizations that run
+                networks and Crown corporations, organizations that run
                 on real connectivity but don&rsquo;t have a procurement
                 department to wrangle it.
               </p>
               <p>
                 We don&rsquo;t resell from a distance. We license the products,
-                provision them, and own the bill. The relationship stays direct
-                &mdash; just sized for the businesses a national carrier
+                provision them, and own the bill. The relationship stays direct,
+                just sized for the businesses a national carrier
                 can&rsquo;t cover one at a time.
               </p>
             </div>
@@ -380,7 +380,7 @@ export default function AboutPage() {
         }
         text={
           <>
-            Dean or Brian takes the first call themselves &mdash; whoever&rsquo;s
+            Dean or Brian takes the first call themselves, whoever&rsquo;s
             closer to your industry. You&rsquo;ll be talking to someone who can
             actually scope the work.
           </>
