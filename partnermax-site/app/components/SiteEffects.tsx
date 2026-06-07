@@ -290,7 +290,6 @@ export default function SiteEffects() {
     setupMarquee();
     setupMagnetic();
     setupParallax();
-    setupScrollProgress();
     setupScrollRules();
     setupObservers();
     setupFadeUp();

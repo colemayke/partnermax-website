@@ -31,7 +31,15 @@
       "Bash(curl -s \"http://localhost:3000/about?cb=$\\(date +%s\\)\")",
       "Bash(curl -s http://localhost:3000/about)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/about)",
-      "Bash(curl -s -o /dev/null -w \"status %{http_code}\\\\n\" http://localhost:3000/about)"
+      "Bash(curl -s -o /dev/null -w \"status %{http_code}\\\\n\" http://localhost:3000/about)",
+      "Bash(npx tsc *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(npx vercel *)",
+      "Bash(curl *)",
+      "Bash(awk -F: '$1<1475')",
+      "Bash(awk 'NR<=1475 && /@media/{ln=NR; txt=$0} END{print ln\": \"txt}' app/styles/site.css)"
     ]
   }
 }
