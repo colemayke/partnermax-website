@@ -66,7 +66,8 @@ const TEAM: TeamMember[] = [
     role: "Managing Partner · Channel & Operations",
     name: "Dean Mayke",
     initials: "DM",
-    bio: "Dean leads the channel relationships and day-to-day operations. He spent close to a decade running mid-market business accounts in commercial wireless, and now spends most of his week with the partners he has signed since.",
+    photo: "/assets/dean-mayke.jpg",
+    bio: "Dean is a channel partnership leader with 25+ years of experience, including roles as General Manager and Director of National Channel Sales at Rogers and Managing Director of Carrier Business Development. He is also SVP of Channel Partners at the CAN Health Network.",
     meta: [
       { label: "Based", value: "Toronto, ON" },
       { label: "Direct", value: "dean@partnermax.ca", href: "mailto:dean@partnermax.ca" },
@@ -78,7 +79,7 @@ const TEAM: TeamMember[] = [
     name: "Brian Ochab",
     initials: "BO",
     photo: "/assets/brian-ochab.jpg",
-    bio: "Brian runs operations — the side of PartnerMax that turns a signed quote into working service. His background is in carrier network design and managed services, and he has overseen a long list of Canadian fibre builds.",
+    bio: "Brian is a technology executive and channel disruptor with 25+ years building new business units and digital sales channels across ICT and B2B SaaS. His mission is to help Telco and technology companies grow revenue by transforming how they sell through partners.",
     meta: [
       { label: "Based", value: "Toronto, ON" },
       { label: "Direct", value: "brian@partnermax.ca", href: "mailto:brian@partnermax.ca" },
