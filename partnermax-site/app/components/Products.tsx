@@ -16,13 +16,13 @@ type Product = {
 
 const PRODUCTS: Product[] = [
   {
-    num: "01 / Wireless",
+    num: "Wireless",
     title: "Rogers Business Wireless",
     desc: "Pooled data, voice, SMS and signal-priority plans across your fleet — activated under one account and billed on one invoice.",
     icon: <WirelessIcon />,
   },
   {
-    num: "02 / Internet",
+    num: "Internet",
     title: "Dedicated Business Fibre",
     desc: (
       <>
@@ -33,13 +33,13 @@ const PRODUCTS: Product[] = [
     icon: <FibreIcon />,
   },
   {
-    num: "03 / Plans",
+    num: "Plans",
     title: "Business Plans & Voice",
     desc: "Hosted PBX, conferencing, toll-free and business landlines. Plan changes processed within one business day.",
     icon: <VoiceIcon />,
   },
   {
-    num: "04 / Bundle",
+    num: "Bundle",
     title: "Enterprise Connect",
     desc: "Wireless, fibre, voice and managed security — priced, provisioned and billed as one.",
     icon: <BundleIcon />,

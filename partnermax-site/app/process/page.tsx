@@ -348,7 +348,7 @@ export default function ProcessPage() {
   return (
     <>
       <PageHero
-        eyebrow="02 / Process"
+        eyebrow="Process"
         variant="minimal"
         bg="/assets/skyline-toronto-winter.jpg"
         title={
@@ -367,12 +367,11 @@ export default function ProcessPage() {
         }
       />
 
-      <ScrollRule label="01 / Timeline" />
+      <ScrollRule label="Timeline" />
 
       <section className="site-section site-section--subtle">
         <div className="site-container">
           <SectionHead
-            num="00"
             eyebrow="The arc"
             title={
               <>
@@ -393,7 +392,7 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <ScrollRule label="02 / Five steps" />
+      <ScrollRule label="Five steps" />
 
       <section className="site-section">
         <div className="site-container">
@@ -405,12 +404,11 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <ScrollRule label="03 / Process FAQ" />
+      <ScrollRule label="Process FAQ" />
 
       <section className="site-section site-section--ivory">
         <div className="site-container">
           <SectionHead
-            num="06"
             eyebrow="Process FAQ"
             title={
               <>

@@ -70,30 +70,17 @@
 }
 
 /* ============================================================
-   SECTION HEADERS — the "01 / 02 / 03" blocks (.site-block-head)
+   SECTION HEADERS (.site-block-head)
 
-   The big red number stacks above the small caption label with only
-   a 12px gap, but the number carries an animated underline
-   (::after, bottom: -16px, 3px tall) that draws in on scroll. 16+3
-   > 12, so the red bar ran straight through the label text. Give the
-   number room for its underline, and even out the number→title
-   alignment so the column reads cleanly as it reveals.
+   Top-align the caption column with the title and even out the gap so
+   the two columns read cleanly as the header reveals.
    ============================================================ */
-.site-block-head__eyebrow {
-  gap: 30px;
-}
-.site-block-head__num {
-  /* a touch more optical separation from the underline that grows
-     beneath it */
-  margin-bottom: 4px;
-}
 .site-block-head {
   align-items: start;
   gap: 56px;
 }
 
 @media (max-width: 1100px) {
-  .site-block-head__eyebrow { gap: 24px; }
   .site-block-head { gap: 28px; }
 }
 

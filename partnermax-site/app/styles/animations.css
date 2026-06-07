@@ -342,22 +342,6 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* ===== Sparkle/red bar accent on section heads ===== */
-.site-block-head__num {
-  position: relative;
-}
-.site-block-head__num::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -16px;
-  width: 0;
-  height: 3px;
-  background: var(--pm-red-600);
-  transition: width 900ms cubic-bezier(0.22, 1, 0.36, 1) 200ms;
-}
-.fade-up.is-visible .site-block-head__num::after { width: 48px; }
-
 /* ===== Image break parallax & subtle zoom-out reveal ===== */
 /* Reveal handled via JS parallax — keep initial transform clean */
 

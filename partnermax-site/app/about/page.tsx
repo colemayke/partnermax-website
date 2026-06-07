@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const MISSION_CELLS = [
   {
-    num: "01 / The carrier’s job",
+    num: "The carrier’s job",
     title: (
       <>
         Build the <em>network</em>.
@@ -30,7 +30,7 @@ const MISSION_CELLS = [
     ),
   },
   {
-    num: "02 / The channel’s job",
+    num: "The channel’s job",
     title: (
       <>
         Translate it into a <em>relationship</em>.
@@ -45,7 +45,7 @@ const MISSION_CELLS = [
     ),
   },
   {
-    num: "03 / The customer’s job",
+    num: "The customer’s job",
     title: (
       <>
         Run the <em>business</em>.
@@ -92,7 +92,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="01 / About"
+        eyebrow="About"
         variant="cinematic"
         bg="/assets/skyline-toronto-dusk.jpg"
         title={
@@ -110,12 +110,11 @@ export default function AboutPage() {
         }
       />
 
-      <ScrollRule label="01 / The founding" />
+      <ScrollRule label="The founding" />
 
       <section className="site-section" id="story">
         <div className="site-container">
           <SectionHead
-            num="01"
             eyebrow="The founding story"
             title={
               <>
@@ -221,12 +220,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <ScrollRule label="02 / Mission" dark />
+      <ScrollRule label="Mission" dark />
 
       <section className="site-section site-section--dark" id="mission">
         <div className="site-container">
           <SectionHead
-            num="02"
             eyebrow="The mission"
             title={
               <>
@@ -303,12 +301,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <ScrollRule label="03 / Leadership" />
+      <ScrollRule label="Leadership" />
 
       <section className="site-section" id="team">
         <div className="site-container">
           <SectionHead
-            num="03"
             eyebrow="Leadership"
             title={
               <>

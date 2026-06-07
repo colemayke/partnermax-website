@@ -14,7 +14,7 @@ import { ArrowRight } from "./components/icons";
 
 const WHY_CELLS = [
   {
-    num: "01 / Licensed channel",
+    num: "Licensed channel",
     title: (
       <>
         Licensed, not <em>reselling</em>.
@@ -29,7 +29,7 @@ const WHY_CELLS = [
     ),
   },
   {
-    num: "02 / Single account",
+    num: "Single account",
     title: (
       <>
         Provisioned and billed in <em>one place</em>.
@@ -44,7 +44,7 @@ const WHY_CELLS = [
     ),
   },
   {
-    num: "03 / Canadian operations",
+    num: "Canadian operations",
     title: (
       <>
         A named <em>contact</em>, not a queue.
@@ -144,12 +144,11 @@ export default function Home() {
 
       <LogoMarquee />
 
-      <ScrollRule label="01 / Products" />
+      <ScrollRule label="Products" />
 
       <section className="site-section" id="products">
         <div className="site-container">
           <SectionHead
-            num="01"
             eyebrow="What we sell"
             title={
               <>
@@ -170,12 +169,11 @@ export default function Home() {
         </div>
       </section>
 
-      <ScrollRule label="02 / Why PartnerMax" dark />
+      <ScrollRule label="Why PartnerMax" dark />
 
       <section className="site-section site-section--dark" id="why">
         <div className="site-container">
           <SectionHead
-            num="02"
             eyebrow="Why PartnerMax"
             title={
               <>
@@ -198,12 +196,11 @@ export default function Home() {
 
       <ImageBreak />
 
-      <ScrollRule label="03 / How it works" />
+      <ScrollRule label="How it works" />
 
       <section className="site-section" id="process">
         <div className="site-container">
           <SectionHead
-            num="03"
             eyebrow="How it works"
             title={
               <>
@@ -224,12 +221,11 @@ export default function Home() {
         </div>
       </section>
 
-      <ScrollRule label="04 / FAQ" />
+      <ScrollRule label="FAQ" />
 
       <section className="site-section site-section--ivory" id="faq">
         <div className="site-container">
           <SectionHead
-            num="04"
             eyebrow="FAQ"
             title={
               <>
@@ -247,7 +243,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ScrollRule label="05 / Get in touch" />
+      <ScrollRule label="Get in touch" />
 
       <CtaBanner
         eyebrow="Become a partner"
