@@ -277,3 +277,21 @@
     padding-bottom: 72px;
   }
 }
+
+/* ============================================================
+   LOGO LOCKUP, single network (added by request)
+
+   PartnerMax currently provisions on Rogers only, so the homepage
+   strip is a static, centered single-logo lockup rather than the
+   scrolling marquee of placeholders it shipped with. Restore the
+   marquee (.site-marquee) here once more signed-partner marks exist.
+   ============================================================ */
+.site-logos__brand {
+  display: flex;
+  justify-content: center;
+}
+.site-logos__brand img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
