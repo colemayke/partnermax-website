@@ -110,7 +110,7 @@ export default function AboutPage() {
         }
       />
 
-      <ScrollRule label="The founding" />
+      <ScrollRule />
 
       <section className="site-section" id="story">
         <div className="site-container">
@@ -220,7 +220,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <ScrollRule label="Mission" dark />
+      <ScrollRule dark />
 
       <section className="site-section site-section--dark" id="mission">
         <div className="site-container">
@@ -301,7 +301,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <ScrollRule label="Leadership" />
+      <ScrollRule />
 
       <section className="site-section" id="team">
         <div className="site-container">

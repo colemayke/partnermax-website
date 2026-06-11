@@ -24,7 +24,11 @@
   display: inline-block;
   overflow: hidden;
   vertical-align: top;
-  padding: 0.05em 0;
+  /* Bottom padding gives the slide-up mask room to clear glyph descenders
+     (e.g. the "g" in "Redefining"); the negative margin cancels that extra
+     height so the vertical rhythm is unchanged. */
+  padding: 0.05em 0 0.24em;
+  margin-bottom: -0.19em;
   line-height: inherit;
 }
 .reveal-text__line > span {
@@ -258,30 +262,7 @@
   background: linear-gradient(90deg, rgba(221,0,0,0) 0%, var(--pm-red-600) 30%, var(--pm-red-400) 100%);
   pointer-events: none;
 }
-.scroll-rule__dot {
-  display: none;
-}
-.scroll-rule__label {
-  position: absolute;
-  right: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: var(--pm-font-mono);
-  font-size: 10px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--pm-text-subtle);
-  background: var(--pm-bg);
-  padding: 4px 10px;
-  white-space: nowrap;
-}
-.scroll-rule--dark .scroll-rule__label {
-  color: rgba(255,255,255,0.5);
-  background: var(--pm-ink-900);
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .scroll-rule__dot { display: none; }
   .scroll-rule__fill { transition: none; }
 }
 

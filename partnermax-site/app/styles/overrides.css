@@ -45,7 +45,7 @@
   line-height: 0.98;
   margin: 0 0 26px;
 }
-.site-hero__h .reveal-text__line { padding: 0.02em 0; }
+.site-hero__h .reveal-text__line { padding: 0.02em 0 0.24em; }
 
 /* Supporting paragraph ("caption"), readable measure, even gap to the
    headline above and the CTAs below. */

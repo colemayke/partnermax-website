@@ -831,18 +831,6 @@
   margin: 0;
   max-width: 36ch;
 }
-.site-image-break__caption {
-  position: absolute;
-  bottom: 24px;
-  left: 40px;
-  font-family: var(--pm-font-display);
-  font-size: 10px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  z-index: 2;
-}
-
 /* ===== EDITORIAL IMAGE INSET ===== */
 .site-image-inset {
   position: relative;

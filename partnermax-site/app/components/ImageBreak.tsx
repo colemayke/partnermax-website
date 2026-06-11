@@ -25,7 +25,6 @@ export default function ImageBreak() {
           we&rsquo;re licensed to serve.
         </p>
       </div>
-      <span className="site-image-break__caption">Canada · coast to coast</span>
     </section>
   );
 }

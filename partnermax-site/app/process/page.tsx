@@ -367,7 +367,7 @@ export default function ProcessPage() {
         }
       />
 
-      <ScrollRule label="Timeline" />
+      <ScrollRule />
 
       <section className="site-section site-section--subtle">
         <div className="site-container">
@@ -392,7 +392,7 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <ScrollRule label="Five steps" />
+      <ScrollRule />
 
       <section className="site-section">
         <div className="site-container">
@@ -404,7 +404,7 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <ScrollRule label="Process FAQ" />
+      <ScrollRule />
 
       <section className="site-section site-section--ivory">
         <div className="site-container">

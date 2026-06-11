@@ -144,7 +144,7 @@ export default function Home() {
 
       <LogoMarquee />
 
-      <ScrollRule label="Products" />
+      <ScrollRule />
 
       <section className="site-section" id="products">
         <div className="site-container">
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ScrollRule label="Why PartnerMax" dark />
+      <ScrollRule dark />
 
       <section className="site-section site-section--dark" id="why">
         <div className="site-container">
@@ -196,7 +196,7 @@ export default function Home() {
 
       <ImageBreak />
 
-      <ScrollRule label="How it works" />
+      <ScrollRule />
 
       <section className="site-section" id="process">
         <div className="site-container">
@@ -221,7 +221,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ScrollRule label="FAQ" />
+      <ScrollRule />
 
       <section className="site-section site-section--ivory" id="faq">
         <div className="site-container">
@@ -243,7 +243,7 @@ export default function Home() {
         </div>
       </section>
 
-      <ScrollRule label="Get in touch" />
+      <ScrollRule />
 
       <CtaBanner
         eyebrow="Become a partner"
