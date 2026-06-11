@@ -154,26 +154,16 @@
     linear-gradient(90deg, rgba(12, 13, 13, 0.60) 0%, rgba(12, 13, 13, 0) 50%);
 }
 
-/* ===== Animated mesh-gradient hero background ===== */
-.site-hero__bg--gradient {
-  /* The blobs supply the colour; drop the photo filter and lay down a
-     dark base with a warm upper-right bias so it's bold even mid-blob. */
-  filter: none;
-  background:
-    radial-gradient(120% 110% at 78% 8%, #2c0709 0%, rgba(12, 13, 13, 0) 55%),
-    var(--pm-ink-900);
-  overflow: hidden;
-}
-/* Bottom + left vignette keeps the white headline legible without
-   killing the vivid upper area. Painted above the blobs. */
-.site-hero__bg--gradient::after {
-  content: "";
+/* ===== Animated mesh-gradient layer, screen-blended over the photo =====
+   Sits above .site-hero__bg (z 0) and below .site-hero::before / the
+   body text. The blobs tint the skyline with drifting red glow rather
+   than replacing it; opacities are kept low so the photo reads through. */
+.site-hero__fx {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(12, 13, 13, 0) 32%, rgba(12, 13, 13, 0.88) 96%),
-    linear-gradient(90deg, rgba(12, 13, 13, 0.55) 0%, rgba(12, 13, 13, 0) 58%);
-  z-index: 2;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
 }
 .site-hero__blob {
   position: absolute;
@@ -185,27 +175,26 @@
   filter: blur(70px);
   mix-blend-mode: screen;
   will-change: transform;
-  z-index: 1;
 }
 .site-hero__blob--1 {
   top: -22%;
   left: -8%;
   background: radial-gradient(circle, #ff1e1e 0%, rgba(255, 30, 30, 0) 62%);
-  opacity: 0.9;
+  opacity: 0.5;
   animation: heroBlob1 22s ease-in-out infinite alternate;
 }
 .site-hero__blob--2 {
   top: -6%;
   right: -16%;
   background: radial-gradient(circle, #dd0000 0%, rgba(221, 0, 0, 0) 62%);
-  opacity: 0.85;
+  opacity: 0.45;
   animation: heroBlob2 27s ease-in-out infinite alternate;
 }
 .site-hero__blob--3 {
   bottom: -28%;
   left: 16%;
   background: radial-gradient(circle, #ff6a3d 0%, rgba(255, 106, 61, 0) 60%);
-  opacity: 0.7;
+  opacity: 0.38;
   animation: heroBlob3 19s ease-in-out infinite alternate;
 }
 .site-hero__blob--4 {
@@ -214,7 +203,7 @@
   width: 52vw;
   height: 52vw;
   background: radial-gradient(circle, #8a0014 0%, rgba(138, 0, 20, 0) 64%);
-  opacity: 0.85;
+  opacity: 0.5;
   animation: heroBlob4 24s ease-in-out infinite alternate;
 }
 @keyframes heroBlob1 {
