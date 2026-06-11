@@ -1,14 +1,10 @@
 import Link from "next/link";
 import { ArrowRight } from "./icons";
 
-/* Homepage hero, full viewport: the Vancouver skyline photo with an
-   animated CSS mesh gradient blended over it. The photo stays a
-   .site-hero__bg div (not next/image) so the documented parallax
-   (SiteEffects translates .site-hero__bg) and the ::before / ::after
-   overlay gradients keep working exactly as designed. The .site-hero__fx
-   layer holds four blurred, slowly-drifting red blobs that screen-blend
-   onto the photo; they animate their own transform and pause under
-   prefers-reduced-motion. */
+/* Homepage hero, full viewport, Vancouver skyline behind a dark + red
+   overlay. The bg stays a CSS-background div (not next/image) so the
+   documented parallax (SiteEffects translates .site-hero__bg) and the
+   ::before / ::after overlay gradients keep working exactly as designed. */
 export default function Hero() {
   return (
     <header className="site-hero">
@@ -16,12 +12,6 @@ export default function Hero() {
         className="site-hero__bg"
         style={{ backgroundImage: "url('/assets/photo-vancouver.jpg')" }}
       />
-      <div className="site-hero__fx" aria-hidden="true">
-        <span className="site-hero__blob site-hero__blob--1" />
-        <span className="site-hero__blob site-hero__blob--2" />
-        <span className="site-hero__blob site-hero__blob--3" />
-        <span className="site-hero__blob site-hero__blob--4" />
-      </div>
       <div className="site-hero__body">
         <div>
           <div className="site-hero__eyebrow">
